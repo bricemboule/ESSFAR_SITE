@@ -9,7 +9,7 @@ const Info = () => {
         Aos.init({duration:1200})
     })
   return (
-    <div className='bg-black/2 h-full'>
+    <div className='bg-black/2 h-full -z-1'>
         <div className='h-full flex justify-center items-center p-4 bg-primary/10' >
             <div className='container grid grid-cols-1 gap-4' >
                 <div className='text-white text-8xl text-bold font-tangeri' >
