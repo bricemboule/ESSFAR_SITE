@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "../components/Carosel/Slider";
 import Categorie from "../components/Categorie/Categorie";
-import Contenu from "../components/Contenu/Contenu";
-import Evenement from "../components/Evenemnt/Evenement";
 import Fromation from "../components/Formation/Fromation";
 import Gallery from "../components/Gallery/Gallery";
 import Objectif from "../components/Objectif/Objectif";
@@ -13,11 +11,10 @@ const Home = () => {
     return (
         <>
             <Slider />
-            <Contenu />
             <Fromation />
             <Categorie />
             <Objectif />
-            <Evenement />
+            {/*<Evenement />*/}
             <HomePartenaire />
             <Temoignage />
             <Gallery />

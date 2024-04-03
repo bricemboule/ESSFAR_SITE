@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Azure from "../images/Azure.png";
+import Ubo from "../images/Ubo.png";
 import Image from "../images/conc.jpg";
 import Paris from "../images/dauphineFrance.jpg";
 import Tunis from "../images/dauphineTunis.jpg";
@@ -38,6 +39,11 @@ const partenaire = [
         nom: "Université Nice Sophia Antipolis",
         image: Nice,
         lien: "https://unt.unice.fr/",
+    },
+    {
+        nom: "Université de Bretagne Occidentale",
+        image: Ubo,
+        lien: "https://www.univ-brest.fr/fr",
     },
 ];
 

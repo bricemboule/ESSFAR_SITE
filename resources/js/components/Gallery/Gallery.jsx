@@ -1,10 +1,10 @@
 import React from "react";
+import img3 from "../../images/gal.jpg";
 import img1 from "../../images/gal1.jpeg";
 import img5 from "../../images/gal2.jpeg";
 import img4 from "../../images/gal4.jpeg";
 import img2 from "../../images/gal5.jpeg";
 import img6 from "../../images/gal6.jpeg";
-import img3 from "../../images/gal7.jpg";
 
 const images = [img1, img2, img3, img4, img5, img6];
 const Gallery = () => {

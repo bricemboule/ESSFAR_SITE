@@ -13,8 +13,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <div className="bg-black h-10 flex items-center justify-around gap-5 text-white">
-            <div className="flex flex-row items-center gap-1">
-                <GiRotaryPhone /> :<p> 693-32-65-22</p>
+            <div className="flex flex-row items-center gap-1 ">
+                <GiRotaryPhone /> :
+                <p className="text-sm"> 697-03-83-27 / 699-83-53-96 </p>
             </div>
             <div className="flex flex-row items-center gap-1">
                 <VscMail /> :<p>contact@essfar.com </p>

@@ -1,3 +1,4 @@
+import "aos/dist/aos.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -110,6 +111,10 @@ export default function Main() {
                         element={<InscriptionAdministrative />}
                     />
                     <Route
+                        path="/admission/anciens-sujets"
+                        element={<AnciensSujet />}
+                    />
+                    <Route
                         path="/admission/inscriptionPedagogique"
                         element={<InscriptionPedagogique />}
                     />
@@ -133,10 +138,7 @@ export default function Main() {
                         path="/entreprises/essfar-incubateur"
                         element={<Incubateur />}
                     />
-                    <Route
-                        path="/vie-essfar/anciens-sujets"
-                        element={<AnciensSujet />}
-                    />
+
                     <Route
                         path="/vie-essfar/association-des-etudiants"
                         element={<Association />}

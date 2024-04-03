@@ -6,19 +6,19 @@ const actualites = [
     {
         id: 1,
         name: "Prochain Concours",
-        text: "La prochaine session de concours d'entree en premiere annee, deuxieme,troisieme et quatrieme annee aura lieu le 13 Avril 2024",
+        text: "La prochaine session du concours d'entrée en première, deuxième, troisième et quatrième année aura lieu le 13 Avril 2024",
         img: Concours,
     },
     {
         id: 1,
         name: "Prochain Concours",
-        text: "La prochaine session de concours d'entree en premiere annee, deuxieme,troisieme et quatrieme annee aura lieu le 13 Avril 2024",
+        text: "La prochaine session du concours d'entrée en première, deuxième, troisième et quatrième année aura lieu le 13 Avril 2024",
         img: Concours,
     },
     {
         id: 1,
         name: "Prochain Concours",
-        text: "La prochaine session de concours d'entree en premiere annee, deuxieme,troisieme et quatrieme annee aura lieu le 13 Avril 2024",
+        text: "La prochaine session du concours d'entrée en première, deuxième, troisième et quatrième année aura lieu le 13 Avril 2024",
         img: Concours,
     },
 ];
@@ -32,7 +32,7 @@ const Evenement = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         cssEase: "linear",
         pauseOnHover: true,
         pauseOnFocus: true,
@@ -43,7 +43,7 @@ const Evenement = () => {
                 <div className="container">
                     <div className="text-center mb-20 max-w-[400px] mx-auto">
                         <h1 className="text-6xl font-bold font-tangeri">
-                            Notre actualité
+                            Nos actualités
                         </h1>
                     </div>
                     <div

@@ -1,14 +1,17 @@
 export const links = [
     {
-        nom: "L'ecole",
+        nom: "L'école",
         submenu: true,
         liens: [
             {
                 lien: [
-                    { nom: "Mot du directeur", link: "/ecole/motDirecteur" },
+                    {
+                        nom: "Mot du Directeur Général",
+                        link: "/ecole/motDirecteur",
+                    },
                     { nom: "Gouvernance", link: "/ecole/gouvernance" },
                     {
-                        nom: "Projet Pedagogique",
+                        nom: "Projet Pédagogique",
                         link: "/ecole/Projet_Pedagogique",
                     },
                 ],
@@ -22,7 +25,7 @@ export const links = [
             {
                 lien: [
                     {
-                        nom: "Fromation Initiale",
+                        nom: "Formation Initiale",
                         link: "/formation/formation-initiale",
                     },
                     {
@@ -43,13 +46,20 @@ export const links = [
         liens: [
             {
                 lien: [
-                    { nom: "Concours ", link: "/admission/concours" },
+                    {
+                        nom: "Concours ",
+                        link: "/admission/concours",
+                    },
+                    {
+                        nom: "Anciennes épreuves",
+                        link: "/admission/anciens-sujets",
+                    },
                     {
                         nom: "Inscription administrative",
                         link: "/admission/inscriptionAdministrative",
                     },
                     {
-                        nom: "Inscription pedagogique",
+                        nom: "Inscription pédagogique",
                         link: "/admission/inscriptionPedagogique",
                     },
                     {
@@ -68,11 +78,11 @@ export const links = [
             {
                 lien: [
                     {
-                        nom: "Les ecoles partenaires ",
+                        nom: "Les écoles partenaires ",
                         link: "/international/ecoles-partenaires",
                     },
                     {
-                        nom: "Les offres de mobilites",
+                        nom: "Les offres de mobilités",
                         link: "/international/offre-de-mobilites",
                     },
                 ],
@@ -99,17 +109,13 @@ export const links = [
         ],
     },
     {
-        nom: "La vie a ESSFAR",
+        nom: "La vie à L'ESSFAR",
         submenu: true,
         liens: [
             {
                 lien: [
                     {
-                        nom: "Anciennes epreuves",
-                        link: "/vie-essfar/anciens-sujets",
-                    },
-                    {
-                        nom: "Association des etudiants",
+                        nom: "Association d'étudiants",
                         link: "/vie-essfar/association-des-etudiants",
                     },
                 ],

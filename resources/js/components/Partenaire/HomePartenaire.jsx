@@ -1,52 +1,67 @@
 import React from "react";
 import Slider from "react-slick";
 import Bia from "../../images/BIA.png";
+import Ubo from "../../images/Ubo.png";
 import Acam from "../../images/acam.png";
-import Aivaincity from "../../images/aivancity.png";
 import Azure from "../../images/azure.png";
 import Charter from "../../images/charter.png";
 import Cnps from "../../images/cnps.jpg";
 import France from "../../images/dauphineFrance.jpg";
 import Tunis from "../../images/dauphineTunis.jpg";
+import Douala from "../../images/doul.jpg";
 import Esilv from "../../images/esilv.jpg";
 import Estia from "../../images/estia.png";
+import Euria from "../../images/euria.jpg";
 import Karbura from "../../images/karbura.png";
 const academique = [
     {
         id: 1,
-        name: "ESTIA",
-        text: "Ecole d'ingenieur accredite par la conference des grandes ecoles, specialises dans les Big Data et l'intelligence artificielle",
-        img: Estia,
+        name: "UNIVERSITE DE DOUALA",
+        text: "",
+        img: Douala,
     },
     {
         id: 2,
+        name: "ESTIA",
+        text: "Ecole d'ingénieur accreditée par la conférence des grandes écoles, spécialisées dans les Big Data et l'intelligence artificielle",
+        img: Estia,
+    },
+    {
+        id: 3,
         name: "Paris Dauphine ",
         text: "La référence universitaire des formations pour les professionnels, managers et dirigeants",
         img: France,
     },
     {
-        id: 3,
+        id: 4,
         name: "Dauphine Tunis",
         text: "La référence universitaire des formations pour les professionnels, managers et dirigeants",
         img: Tunis,
     },
     {
-        id: 4,
+        id: 5,
         name: "ESILV",
-        text: "l’une des trois écoles du Groupe Léonard de Vinci, avec l’EMLV (école de Management) et l’IIM (école des métiers de l’Internet et du Multimédia)",
+        text: "L’une des écoles du Groupe Léonard de Vinci",
         img: Esilv,
     },
     {
         id: 6,
-        name: "Universite Cote d'Azure",
+        name: "Université Cote d'Azur",
         text: "Université intensive en recherche portant des formations d'excellence dans les secteurs innovants, implantée à Nice, Sophia-Antipolis, Cannes",
         img: Azure,
     },
+
     {
         id: 7,
-        name: "Aivancity",
-        text: "Première et unique école en IA et Data reconnue par l’Etat et délivrant un diplôme visé",
-        img: Aivaincity,
+        name: "Euria Brest",
+        text: "",
+        img: Euria,
+    },
+    {
+        id: 8,
+        name: "Université de Bretagne Occidentale (UBO)",
+        text: "",
+        img: Ubo,
     },
 ];
 
@@ -59,14 +74,14 @@ const professionnel = [
     },
     {
         id: 2,
-        name: "CHARTER ",
+        name: "CHARTERED FINANCIAL",
         text: "Cabinet de conseils financiers",
         img: Charter,
     },
     {
         id: 3,
         name: "CNPS",
-        text: "Societe para publique, chargee de la prevoyance sociale",
+        text: "Socièté para publique, de prévoyance sociale",
         img: Cnps,
     },
     {
@@ -108,9 +123,9 @@ const HomePartenaire = () => {
                     className="py-1"
                 >
                     <div className="container">
-                        <div className="text-center mb-20 max-w-[400px] mx-auto">
+                        <div className="text-center mb-2 max-w-[400px] mx-auto">
                             <h1 className="text-6xl font-bold font-tangeri">
-                                Nos partenaires academiques
+                                Nos partenaires académiques
                             </h1>
                         </div>
                         <div
@@ -127,7 +142,7 @@ const HomePartenaire = () => {
                                                 className="flex flex-col justify-center items-center gap-4 text-center   shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative"
                                             >
                                                 <img
-                                                    className="rounded-full block mx-auto"
+                                                    className="rounded-md block mx-auto"
                                                     src={data.img}
                                                     alt=""
                                                 />
@@ -154,7 +169,7 @@ const HomePartenaire = () => {
                     className="py-1"
                 >
                     <div className="container">
-                        <div className="text-center mb-20 max-w-[400px] mx-auto">
+                        <div className="text-center mb-2 max-w-[400px] mx-auto">
                             <h1 className="text-6xl font-bold font-tangeri">
                                 Nos partenaires professionnels
                             </h1>

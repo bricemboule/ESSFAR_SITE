@@ -23,7 +23,7 @@ const partenaire = [
     {
         nom: "CNPS",
         image: Estia,
-        desc: "Caisse de prevoyance sociale",
+        desc: "Caisse National de prevoyance sociale",
         lien: "https://www.cnps.cm/index.php/fr/",
     },
     {

@@ -62,13 +62,14 @@ const Footer = () => {
                         <div className="px-6">
                             <ul>
                                 <li className="my-4 list-none">
-                                    <Link to="">Nos formations</Link>
+                                    <Link to="/formation/formation-initiale">
+                                        Formations Initiales
+                                    </Link>
                                 </li>
                                 <li className="my-4 list-none">
-                                    <Link to="">Candidater et s'inscrire</Link>
-                                </li>
-                                <li className="my-4 list-none">
-                                    <Link to="">Debouches</Link>
+                                    <Link to="/formation/formation-continue">
+                                        Formation Continue
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -79,7 +80,8 @@ const Footer = () => {
                         </h2>
 
                         <div className="flex flex-row items-center gap-2 m-2">
-                            <GiRotaryPhone /> :<p> 693-32-65-22</p>
+                            <GiRotaryPhone /> :
+                            <p> 697-03-83-27 / 650-80-62-54</p>
                         </div>
                         <div className="flex flex-row items-center gap-2 m-2">
                             <VscMail /> :<p>contact@essfar.com </p>

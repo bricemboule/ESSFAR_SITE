@@ -27,7 +27,7 @@ const Categorie = () => {
         <>
             <div className="mt-12">
                 <div className="container pt-6">
-                    <div className="pt-4 text-center mb-20 max-w-[800px] mx-auto">
+                    <div className="pt-4 text-center mb-5 max-w-[800px] mx-auto">
                         <h1 className="text-center text-sky-500 text-6xl font-tangeri">
                             Une Offre de Formation à Votre Portée
                         </h1>

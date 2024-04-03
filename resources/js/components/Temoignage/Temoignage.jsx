@@ -6,20 +6,20 @@ import video2 from "../../images/video/tat.mp4";
 const testimonialData = [
     {
         id: 1,
-        name: "Kamkuimo",
-        text: "Analyste Financier aupres à FINANCIA CAPITAL",
+        name: "Gäel KAMKUIMO",
+        text: "Analyste Financier à FINANCIA CAPITAL",
         img: video1,
     },
     {
         id: 2,
-        name: "ATANGA",
-        text: "Actuaire en service chez Mazar",
+        name: "Vanilie ATANGANA",
+        text: "Actuaire à MAZARS",
         img: video,
     },
     {
         id: 3,
-        name: "Lesly Tatsinkou",
-        text: "Etudiant en mobilite a l'universite Normadie Caen",
+        name: "Lesly TATSINKOU",
+        text: "Etudiant en mobilité à l'université Normadie Caen",
         img: video2,
     },
 ];
@@ -43,8 +43,8 @@ const Temoignage = () => {
             <div data-aos="fade-up" data-aos-duration="300" className="m-20">
                 <div className="container">
                     <div className="text-center mb-5 mx-auto">
-                        <h1 className="text-6xl font-bold font-tangeri text-sky-500">
-                            Ils temoignent de leurs passages à l'ESSFAR :
+                        <h1 className="md:text-5xl text-4xl md:font-bold font-tangeri">
+                            Ils temoignent de leurs passages à l'ESSFAR
                         </h1>
                     </div>
                     <div

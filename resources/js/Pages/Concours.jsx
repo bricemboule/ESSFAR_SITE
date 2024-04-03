@@ -16,13 +16,13 @@ const Concours = () => {
                 <p>
                     Prochaine date de concours :{" "}
                     <span className="text-red-500 italic text-xl">
-                        27 Mars 2024
+                        13 Avril 2024
                     </span>
                 </p>
                 <p>
                     Date limite de dépôt des dossiers :{" "}
                     <span className="text-red-500 text-xl italic">
-                        26 Mars 2024
+                        12 Avril 2024
                     </span>
                 </p>
                 <p>
@@ -106,7 +106,7 @@ const Concours = () => {
                 <p>
                     Télécharger les anciennes épreuves de concours :{" "}
                     <Link
-                        to="/vie-essfar/anciens-sujets"
+                        to="/admission/anciens-sujets"
                         className="text-sky-500"
                     >
                         anciennes épreuves
