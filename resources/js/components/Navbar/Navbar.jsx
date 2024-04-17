@@ -3,14 +3,17 @@ import { FaHome } from "react-icons/fa";
 import { IoCloseSharp, IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Logo from "../../images/Logo-ESSFAR.png";
+import Header from "../Header";
 import Button from "./Button";
 import NavLink from "./NavLink";
+import Section from "./Section";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-white py-1">
+        <nav className="bg-white py-1 z-1">
+            <Header />
             <div className="flex items-center font-medium justify-around">
                 <div className="z-50 p-3 md:w-auto w-full flex justify-between">
                     <img
@@ -45,7 +48,7 @@ const Navbar = () => {
 
                 <ul
                     className={`md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4  duration-500 ${
-                        open ? "left-0" : "left-[-100%]"
+                        open ? "left-0" : "left-[-100%] z-1"
                     }`}
                 >
                     <li>
@@ -64,6 +67,7 @@ const Navbar = () => {
                     </div>
                 </ul>
             </div>
+            <Section />
         </nav>
     );
 };

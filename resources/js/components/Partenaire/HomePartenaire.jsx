@@ -54,7 +54,7 @@ const academique = [
     {
         id: 7,
         name: "Euria Brest",
-        text: "",
+        text: "Euro-Institut d'Actuariat",
         img: Euria,
     },
     {

@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../components/Carosel/Slider";
+import Carousel1 from "../components/Carosel/Carousel1";
 import Categorie from "../components/Categorie/Categorie";
 import Fromation from "../components/Formation/Fromation";
 import Gallery from "../components/Gallery/Gallery";
@@ -10,7 +10,7 @@ import Temoignage from "../components/Temoignage/Temoignage";
 const Home = () => {
     return (
         <>
-            <Slider />
+            <Carousel1 />
             <Fromation />
             <Categorie />
             <Objectif />

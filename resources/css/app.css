@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:wght@200;400&display=swap");
 
 @layer base {
     html {
@@ -35,7 +36,7 @@
     opacity: 0;
 }
 .clip-visible {
-    clip-path: ellipse(750px 750px at 0% 0%);
+    clip-path: ellipse(100% 100%);
 }
 
 #back,

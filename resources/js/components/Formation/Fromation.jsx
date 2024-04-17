@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import Img1 from "../../images/Data1.png";
 import Img from "../../images/actuaria.jpg";
 import Img3 from "../../images/ingeniereFinanciere1.png";
+import Img4 from "../../images/systeme-dinformation4.png";
 
 const FormationsData = [
     {
         id: 1,
         img: Img,
-        name: "Actuariat                    ",
+        name: "Actuariat",
         lien: "/formation/formation-initiale/actuariat",
         description: "Devenez un expert en gestion de risques.",
     },
@@ -28,7 +29,7 @@ const FormationsData = [
     },
     {
         id: 4,
-        img: Img3,
+        img: Img4,
         name: "Systèmes d'Information",
         lien: "/formation/formation-initiale/Systeme-information",
         description: "Devenez un expert en Finance",
@@ -39,14 +40,14 @@ const Fromation = () => {
     return (
         <div>
             <div className="text-center mb-20 max-w-[800px] mx-auto pt-8">
-                <h1 className="text-5xl md:text-6xl font-tangeri ">
+                <h1 className="text-5xl text-red-500 md:text-6xl font-tangeri ">
                     Des spécialités à la hauteur des défis du 21è Siècle
                 </h1>
             </div>
             <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14 md:gap-4 place-items-center">
                 {FormationsData.map((formation) => (
                     <Link to={formation.lien}>
-                        <div className="rounded-2xl bg-white hover:bg-blue-400 hover:text-white relative shadow-xl duration-high group max-w-[300px]">
+                        <div className="rounded-2xl py-3 bg-white hover:bg-blue-400 hover:text-white relative shadow-xl duration-high group w-[350px]">
                             <div className="h-[80px] ">
                                 <img
                                     src={formation.img}

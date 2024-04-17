@@ -1,27 +1,21 @@
 import React from "react";
-import {
-    FaFacebookF,
-    FaGooglePlusG,
-    FaInstagram,
-    FaLinkedinIn,
-    FaTwitter,
-} from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { GiRotaryPhone } from "react-icons/gi";
 import { VscMail } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="bg-black h-10 flex items-center justify-around gap-5 text-white">
-            <div className="flex flex-row items-center gap-1 ">
-                <GiRotaryPhone /> :
-                <p className="text-sm"> 697-03-83-27 / 699-83-53-96 </p>
+        <div className="bg-sky-600 h-10 flex items-center justify-around gap-6 text-white">
+            <div className="flex md:flex-row items-center gap-1 ">
+                <GiRotaryPhone className="md:text-md hidden md:block" />
+                <p className=""> 697-03-83-27 / 699-83-53-96 </p>
             </div>
             <div className="flex flex-row items-center gap-1">
-                <VscMail /> :<p>contact@essfar.com </p>
+                <VscMail /> <p>contact@essfar.com </p>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 md:gap-6">
                 <Link
                     to="https://www.facebook.com/profile.php?id=100063534339794"
                     target="_blank"
@@ -37,18 +31,6 @@ const Header = () => {
                 >
                     {" "}
                     <FaLinkedinIn />{" "}
-                </Link>
-                <Link to="" target="_blank" rel="noreferrer">
-                    {" "}
-                    <FaGooglePlusG />
-                </Link>
-                <Link to="" target="_blank" rel="noreferrer">
-                    {" "}
-                    <FaTwitter />
-                </Link>
-                <Link to="" target="_blank" rel="noreferrer">
-                    {" "}
-                    <FaInstagram />
                 </Link>
             </div>
         </div>

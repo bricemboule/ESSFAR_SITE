@@ -3,7 +3,7 @@ import { GiFoodTruck } from "react-icons/gi";
 import { GrSecure } from "react-icons/gr";
 import { IoFastFood } from "react-icons/io5";
 import Slider from "react-slick";
-import Concours from "../../images/concours.png";
+import Concours from "../../images/resultats-concours.png";
 import Vector from "../../images/vector3.png";
 
 const actualites = [
@@ -116,16 +116,20 @@ const Objectif = () => {
                                                         className="flex flex-col justify-center items-center gap-4 text-center   shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative"
                                                     >
                                                         <img
-                                                            className="rounded-full block mx-auto"
+                                                            className="rounded-full block mx-auto w-[200px] h-[200px]"
                                                             src={data.img}
                                                             alt=""
                                                         />
-                                                        <p className="text-gray-500 text-sm">
-                                                            {data.text}
+                                                        <p className="text-gray-500 text-2xl">
+                                                            La prochaine session
+                                                            du concours d'entrée
+                                                            en 1<sup>ère</sup>,
+                                                            2<sup>e</sup>, 3
+                                                            <sup>e</sup> et 4
+                                                            <sup>e</sup> année :
+                                                            Juin 2024
                                                         </p>
-                                                        <h1 className="text-xl font-bold">
-                                                            {data.name}
-                                                        </h1>
+
                                                         <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
                                                             ,,
                                                         </p>

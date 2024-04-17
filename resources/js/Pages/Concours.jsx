@@ -4,25 +4,24 @@ import Niveau1 from "../../pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AV
 import Niveau2 from "../../pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - 2ème ANNEE.pdf";
 import Niveau3 from "../../pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - 3ème ANNEE.pdf";
 import Niveau4 from "../../pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - MASTER 1.pdf";
-import Image from "../images/concours.jpg";
 
 const Concours = () => {
     return (
         <div>
-            <div className="relative z-[-1]">
-                <img className="w-full h-[500px]" src={Image} />
-            </div>
+            {/*<div className="relative z-[-1]">
+                <img className="w-full h-[250px] md:h-[500px]" src={Image} />
+    </div>*/}
             <div className="text-center text-xl p-10">
                 <p>
                     Prochaine date de concours :{" "}
                     <span className="text-red-500 italic text-xl">
-                        13 Avril 2024
+                        Juin 2024
                     </span>
                 </p>
                 <p>
                     Date limite de dépôt des dossiers :{" "}
                     <span className="text-red-500 text-xl italic">
-                        12 Avril 2024
+                        Juin 2024
                     </span>
                 </p>
                 <p>
@@ -54,7 +53,7 @@ const Concours = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                1<sup>ème</sup> année
+                                1<sup>ère</sup> année
                             </Link>
                             ,{" "}
                             <Link
@@ -64,7 +63,7 @@ const Concours = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                2 <sup>ème</sup> année
+                                2<sup>e</sup> année
                             </Link>
                             ,{" "}
                             <Link
@@ -74,7 +73,7 @@ const Concours = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                3 <sup>ème</sup> année
+                                3<sup>e</sup> année
                             </Link>
                             ,{" "}
                             <Link

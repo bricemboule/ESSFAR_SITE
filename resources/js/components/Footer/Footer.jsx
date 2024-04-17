@@ -1,11 +1,5 @@
 import React from "react";
-import {
-    FaFacebookF,
-    FaGooglePlusG,
-    FaInstagram,
-    FaLinkedinIn,
-    FaTwitter,
-} from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { GiRotaryPhone } from "react-icons/gi";
 import { VscMail } from "react-icons/vsc";
 import { Link } from "react-router-dom";
@@ -31,7 +25,7 @@ const Footer = () => {
                 </svg>
                 <div className="grid lg:grid-cols-3 gap-20 sm:grid-cols-1 p-20">
                     <div>
-                        <li className="text-[22px] list-none font-semibold text-pink-500 py-2 uppercase">
+                        <li className="text-[22px] list-none font-semibold text-sky-500 py-2 uppercase">
                             ESSFAR
                         </li>
                         <div className="px-6">
@@ -56,7 +50,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <li className="text-[22px] list-none font-semibold text-pink-500 py-2 uppercase">
+                        <li className="text-[22px] list-none font-semibold text-sky-500 py-2 uppercase">
                             Formations
                         </li>
                         <div className="px-6">
@@ -75,7 +69,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="mb-4 md:mb-0">
-                        <h2 className="text-[22px] font-semibold text-pink-500 py-2">
+                        <h2 className="text-[22px] font-semibold text-sky-500 py-2">
                             Nous Conctacter
                         </h2>
 
@@ -107,30 +101,6 @@ const Footer = () => {
                                 {" "}
                                 <FaLinkedinIn />{" "}
                             </Link>
-                            <Link
-                                to=""
-                                className="text-white hover:text-pink-500 transform hover:scale-150
-                             transition-all duration-150 ease-in-out"
-                            >
-                                {" "}
-                                <FaGooglePlusG />
-                            </Link>
-                            <Link
-                                to=""
-                                className="text-white hover:text-pink-500 transform hover:scale-150
-                             transition-all duration-150 ease-in-out"
-                            >
-                                {" "}
-                                <FaTwitter />
-                            </Link>
-                            <Link
-                                to=""
-                                className="text-white hover:text-pink-500 transform hover:scale-150
-                             transition-all duration-150 ease-in-out"
-                            >
-                                {" "}
-                                <FaInstagram />
-                            </Link>
                         </div>
                     </div>
                 </div>
@@ -142,11 +112,11 @@ const Footer = () => {
                                 type="email"
                                 placeholder=""
                                 className="w-full text-gray-800 p-4 h-10 rounded-full focus:outline-none 
-                            focus:border border-pink-800"
+                            focus:border text-sky-500"
                             />
                             <button
                                 type="Submit"
-                                className="bg-pink-400 px-8 py-2 rounded-full text-white
+                                className="bg-sky-500 px-8 py-2 rounded-full text-white
                                  absolute top-0 right-0"
                             >
                                 Submit

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import Concours from "../../images/concours.png";
+import Concours from "../../images/resultats-concours.png";
 
 const actualites = [
     {
@@ -65,11 +65,12 @@ const Evenement = () => {
                                                 alt=""
                                             />
                                             <p className="text-gray-500 text-sm">
-                                                {data.text}
+                                                La prochaine session du concours
+                                                d'entrée en 1<sup>ère</sup>, 2
+                                                <sup>e</sup>, 3<sup>e</sup> et 4
+                                                <sup>e</sup> : Juin 2024
                                             </p>
-                                            <h1 className="text-xl font-bold">
-                                                {data.name}
-                                            </h1>
+
                                             <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
                                                 ,,
                                             </p>

@@ -40,8 +40,6 @@ import {
 import Sept20 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Septembre 2020 - Mathématiques VF.pdf";
 import Sept21 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Septembre 2021 - Mathématiques VF.pdf";
 
-import Image from "../images/sujet.jpg";
-
 const niveau = [
     {
         intitule: "1ERE ANNEE",
@@ -198,6 +196,21 @@ const L1 = [
             {
                 intitule: "Epreuve de Mathématiques VA",
                 fichier: Aout19A,
+            },
+        ],
+    },
+];
+const L2 = [
+    {
+        session: "",
+        sujet: [
+            {
+                intitule: "",
+                fichier: "",
+            },
+            {
+                intitule: "",
+                fichier: "",
             },
         ],
     },
@@ -364,6 +377,22 @@ const Act = [
     },
 ];
 
+const Inf = [
+    {
+        session: "",
+        sujet: [
+            {
+                intitule: "",
+                fichier: "",
+            },
+            {
+                intitule: "",
+                fichier: "",
+            },
+        ],
+    },
+];
+
 const Big = [
     {
         session: "Concours bourse",
@@ -396,10 +425,7 @@ const AnciensSujet = () => {
     };
     return (
         <>
-            <div className="relative z-[-1]">
-                <img className="w-full h-[500px]" src={Image} />
-            </div>
-            <div className="my-8">
+            <div className="my-8 z-[-1]">
                 <h1 className="font-tangeri text-6xl text-center">
                     Anciennes Epreuves
                 </h1>
@@ -448,7 +474,7 @@ const AnciensSujet = () => {
                     <div
                         className={show.id === "deux" ? `deux` : "deux hidden"}
                     >
-                        {Big.map((data) => (
+                        {L2.map((data) => (
                             <div className="text-center m-4">
                                 <p className="text-sky-500 underline text-xl">
                                     {data.session}
@@ -457,7 +483,7 @@ const AnciensSujet = () => {
                                     {data.sujet.map((data) => (
                                         <div className="flex items-center gap-2">
                                             <p>{data.intitule}</p>
-                                            <Link
+                                            {/*<Link
                                                 to={data.fichier}
                                                 className="text-red-500"
                                                 download="Catalogue-de-formation"
@@ -465,7 +491,7 @@ const AnciensSujet = () => {
                                                 rel="noreferrer"
                                             >
                                                 <FaFileDownload />
-                                            </Link>
+                                    </Link>*/}
                                         </div>
                                     ))}
                                 </div>
@@ -558,7 +584,7 @@ const AnciensSujet = () => {
                         ))}
                     </div>
                     <div className={show.id === "six" ? `six` : "six hidden"}>
-                        {Big.map((data) => (
+                        {Inf.map((data) => (
                             <div className="text-center m-4">
                                 <p className="text-sky-500 underline text-xl">
                                     {data.session}
@@ -567,7 +593,7 @@ const AnciensSujet = () => {
                                     {data.sujet.map((data) => (
                                         <div className="flex items-center gap-2">
                                             <p>{data.intitule}</p>
-                                            <Link
+                                            {/*<Link
                                                 to={data.fichier}
                                                 className="text-red-500"
                                                 download="Catalogue-de-formation"
@@ -575,7 +601,7 @@ const AnciensSujet = () => {
                                                 rel="noreferrer"
                                             >
                                                 <FaFileDownload />
-                                            </Link>
+                                    </Link>*/}
                                         </div>
                                     ))}
                                 </div>

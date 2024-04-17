@@ -10,6 +10,7 @@ export default {
             fontFamily: {
                 tangeri: ['"Tangerine"', "cursive"],
                 messiri: ["El Messiri", "sans-serif"],
+                corne: ["Cormorant Infant", "sans-serif"],
             },
         },
         animation: {
