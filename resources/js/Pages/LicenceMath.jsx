@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "../images/lico-math.jpg";
 
 const admission = [
     {
@@ -18,10 +17,10 @@ const admission = [
 
 const LicenceMath = () => {
     return (
-        <div>
-            <div className="relative z-[-1]">
+        <div className="relative z-[-1]">
+            {/*<div>
                 <img className="w-full h-[500px]" src={Image} />
-            </div>
+    </div>*/}
             <div className="m-4">
                 <h1 className="text-center text-sky-500 underline text-3xl">
                     Licence - Mathématiques et Economie-Finance-Assurance

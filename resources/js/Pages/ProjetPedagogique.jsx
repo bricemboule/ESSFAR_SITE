@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "../images/dip.jpg";
 const projet = [
     {
         name: "L’excellence Académique",
@@ -61,9 +60,9 @@ const projet = [
 const ProjetPedagogique = () => {
     return (
         <>
-            <div className="relative z-[-1]">
+            {/*<div className="relative z-[-1]">
                 <img className="w-full h-[500px]" src={Image} />
-            </div>
+    </div>*/}
             <div className="m-8">
                 <p className="text-3xl text-center">
                     Notre projet pédagogique s’appuie sur quatre valeurs clées :

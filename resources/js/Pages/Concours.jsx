@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Niveau1 from "../../pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - 1ère ANNEE.pdf";
-import Niveau2 from "../../pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - 2ème ANNEE.pdf";
-import Niveau3 from "../../pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - 3ème ANNEE.pdf";
-import Niveau4 from "../../pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - MASTER 1.pdf";
+import Niveau1 from "../../../public/pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - 1ère ANNEE.pdf";
+import Niveau2 from "../../../public/pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - 2ème ANNEE.pdf";
+import Niveau3 from "../../../public/pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - 3ème ANNEE.pdf";
+import Niveau4 from "../../../public/pdf/fiche inscription/FICHE D'INSCRIPTION CONCOURS AVRIL ESSFAR - MASTER 1.pdf";
 
 const Concours = () => {
     return (

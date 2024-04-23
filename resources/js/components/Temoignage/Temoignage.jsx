@@ -1,7 +1,7 @@
 import React from "react";
-import video from "../../images/video/atan.mp4";
-import video1 from "../../images/video/kam.mp4";
-import video2 from "../../images/video/tat.mp4";
+import video from "../../../../public/images/video/atan.mp4";
+import video1 from "../../../../public/images/video/kam.mp4";
+import video2 from "../../../../public/images/video/tat.mp4";
 
 const testimonialData = [
     {
@@ -54,7 +54,7 @@ const Temoignage = () => {
                     >
                         {testimonialData.map((data) => {
                             return (
-                                <div className="w-140">
+                                <div className="w-240">
                                     <div
                                         key={data.id}
                                         className="flex flex-col justify-center items-center gap-4 text-center   shadow-lg p-4 mx-4 dark:bg-gray-800 bg-primary/10 relative"

@@ -14,8 +14,8 @@ const Objectifs = [
 
 const SI = () => {
     return (
-        <div>
-            <div className="relative">
+        <div className="relative z-[-1]">
+            <div className="">
                 <img className="w-full h-[500px]" src={Image} />
             </div>
             <div>

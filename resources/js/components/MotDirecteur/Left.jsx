@@ -1,6 +1,4 @@
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 import { FadeIn } from "./FadeIn";
 
 const Left = () => {
@@ -18,7 +16,7 @@ const Left = () => {
     return (
         <FadeIn className="w-full lgl:w-1/2 flex flex-col gap-20">
             <div className="flex flex-col gap-5 mx-7">
-                <h1 className="text-3xl ">
+                {/*<h1 className="text-3xl ">
                     Je suis{" "}
                     <span className="text-designColor capitalize">
                         Dr Patrick SEUMEN TONOU,
@@ -27,7 +25,7 @@ const Left = () => {
                 <h2 className="text-6xl text-sky-600 font-tangeri">
                     <span>{text}</span>
                     <Cursor cursorStyle="|" cursorColor="#ff014f" />
-                </h2>
+    </h2>*/}
                 <p className="indent-4 text-justify leading-6 tracking-wider">
                     Le monde actuel vit une période de changements sans
                     précédent. L’arrivée à maturité, de façon quasi simultanée,
@@ -81,7 +79,7 @@ const Left = () => {
                     votre avenir et votre pays.
                 </p>
             </div>
-            <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between mx-40">
+            {/*<div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between mx-40">
                 <div>
                     <h2 className="text-base uppercase font-titleFont mb-4">
                         Me contacter
@@ -105,7 +103,7 @@ const Left = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
+                    </div>*/}
         </FadeIn>
     );
 };

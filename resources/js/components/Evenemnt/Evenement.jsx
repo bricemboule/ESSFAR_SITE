@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import Concours from "../../images/resultats-concours.png";
+import Concours from "../../../../public/images/resultats-concours.png";
 
 const actualites = [
     {

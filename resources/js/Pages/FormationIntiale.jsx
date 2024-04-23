@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BigData from "../images/Data.jpg";
-import Actuariat from "../images/actuaria.jpg";
-import inf from "../images/banque.jpg";
-import Image from "../images/ini.jpg";
-import Info from "../images/licoInfo.png";
-import Lico from "../images/math.jpg";
-import SI from "../images/sinfo.jpeg";
+import BigData from "../../../public/images/Data.jpg";
+import Actuariat from "../../../public/images/actuaria.jpg";
+import inf from "../../../public/images/banque.jpg";
+import Image from "../../../public/images/ini.jpg";
+import Info from "../../../public/images/licoInfo.png";
+import Lico from "../../../public/images/math.jpg";
+import SI from "../../../public/images/sinfo.jpeg";
 const paragraphe = [
     {
         para: "  L’ESSFAR propose une offre de formation initiale sur une durée de 5 ans avec pour objectif la préparation au diplôme de Master Professionnel. L’originalité de la formation repose sur une pédagogie par projet qui donne aux étudiants des outils et des méthodes pour répondre efficacement aux problématiques concrètes rencontrées dans le monde professionnel. Le modèle des enseignements est celui du système LMD avec 2 cycles :",
@@ -68,7 +68,7 @@ const FormationIntiale = () => {
         <>
             <div>
                 <div className="relative z-[-1]">
-                    <img className="w-full h-[500px]" src={Image} />
+                    <img className="w-full h-[300px]" src={Image} />
                 </div>
                 <div className="text-md my-4">
                     {paragraphe.map((data) => (

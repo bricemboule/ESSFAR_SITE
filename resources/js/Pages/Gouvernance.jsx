@@ -1,26 +1,25 @@
 import React from "react";
-import pat from "../images/avatar.png";
-import Image from "../images/gouvernance.jpg";
+import pat from "../../../public/images/avatar.png";
 const equipe = [
     {
         id: 1,
-        poste: "Directeur General",
+        poste: "Directeur Général",
         name: "Patrick SEUMEN TONOU",
         titre: "Dr",
         img: pat,
     },
     {
         id: 2,
-        poste: "Directeur Academique",
+        poste: "Directeur Académique",
         name: "Etienne TSAMO",
         titre: "Pr",
         img: pat,
     },
     {
         id: 3,
-        poste: "Comptable",
-        name: "Siméon CHATCHUENG",
-        titre: "M",
+        poste: "Manager de la communication et relation avec les entreprises",
+        name: "Myriam MAON",
+        titre: "Mme",
         img: pat,
     },
 ];
@@ -39,7 +38,7 @@ const conseil = [
         poste: "Membre",
         name: "Etienne TSAMO",
         titre: "Pr",
-        pro: "Professeur agrege d'universite en Chimie",
+        pro: "Professeur agrégé d'université en Chimie",
         img: pat,
     },
     {
@@ -47,7 +46,7 @@ const conseil = [
         poste: "Membre",
         name: "Gabriel NGUETSENG",
         titre: "Pr",
-        pro: "Professeur agrege d'universite en Mathematiques",
+        pro: "Professeur agrégé d'université en Mathématiques",
         img: pat,
     },
 
@@ -56,7 +55,7 @@ const conseil = [
         poste: "Membre",
         name: "Norbert NOUTCHEGUEME",
         titre: "Pr",
-        pro: "Professeur agrege d'universite en Mathematiques",
+        pro: "Professeur agrégé d'université en Mathématiques",
         img: pat,
     },
     {
@@ -64,7 +63,7 @@ const conseil = [
         poste: "Membre",
         name: "Siméon FOTSO",
         titre: "Pr",
-        pro: "Professeur agrege d'universite en Mathematiques, Statisticien, HDR en Mathématiques Appliquées",
+        pro: "Professeur agrégé d'université en Mathématiques, Statisticien, HDR en Mathématiques Appliquées",
         img: pat,
     },
     {
@@ -95,22 +94,18 @@ const conseil = [
 const Gouvernance = () => {
     return (
         <>
-            <div className="relative z-[-1]">
+            {/*<div className="relative z-[-1]">
                 <img className="w-full h-[500px]" src={Image} />
-            </div>
+    </div>*/}
             <div className="m-8">
-                <p className="text-xl text-indent text-center">
-                    La gouvernance d'ESSFAR est repartie en deux :
-                </p>
-
                 <div className=" text-xl">
                     <div className="p-10">
                         <h1 className="text-4xl text-center text-blue-500">
-                            L'equipe dirigeante
+                            L'équipe dirigeante
                         </h1>
                         <div className="py-6 px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-30 place-items-center">
                             {equipe.map((data) => (
-                                <div className="flex justify-evenly gap-x2 w-150">
+                                <div className="flex justify-evenly gap-2 w-250">
                                     <div className="rounded-full">
                                         <img
                                             src={data.img}
@@ -118,7 +113,7 @@ const Gouvernance = () => {
                                             className="rounded-full"
                                         />
                                     </div>
-                                    <div className="w-[400px] p-8">
+                                    <div className="w-[500px] p-4">
                                         <h3>
                                             {data.titre}. {data.name}
                                         </h3>

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/conFi.jpeg";
+import Image from "../../../public/images/conFi.jpeg";
 
 const Association = () => {
     return (

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "../images/peda.jpg";
 
 const donnee = [
     {
@@ -60,9 +59,9 @@ const procedure = [
 const InscriptionAdministrative = () => {
     return (
         <div>
-            <div className="relative z-[-1]">
+            {/*<div className="relative z-[-1]">
                 <img className="w-full h-[600px]" src={Image} />
-            </div>
+    </div>*/}
             {donnee.map((data) => (
                 <div className="p-8">
                     <h1 className="text-3xl text-center text-blue-500 underline">

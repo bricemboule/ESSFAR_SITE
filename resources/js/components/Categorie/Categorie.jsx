@@ -1,8 +1,9 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import Img from "../../images/cont1.webp";
-import Img2 from "../../images/ini.jpg";
+import Img from "../../../../public/images/cont1.webp";
+import Img2 from "../../../../public/images/ini.jpg";
+
 const FormationsData = [
     {
         id: 1,

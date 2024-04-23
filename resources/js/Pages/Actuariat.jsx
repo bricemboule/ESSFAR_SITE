@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/ris.jpg";
+import Image from "../../../public/images/ris.jpg";
 
 const Objectifs = [
     {

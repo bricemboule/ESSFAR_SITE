@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Euria from "../images/BIA.png";
-import Paris from "../images/CHAR.png";
-import Azure from "../images/acam.png";
-import Estia from "../images/cnps.jpg";
-import Image from "../images/conc.jpg";
-import Tunis from "../images/karbura.png";
-import Nice from "../images/stp.png";
+import Euria from "../../../public/images/BIA.png";
+import Paris from "../../../public/images/CHAR.png";
+import Azure from "../../../public/images/acam.png";
+import Estia from "../../../public/images/cnps.jpg";
+import Tunis from "../../../public/images/karbura.png";
+import Nice from "../../../public/images/stp.png";
 const partenaire = [
     {
         nom: "CHARTERED FINANCE & CO",
@@ -49,9 +48,9 @@ const partenaire = [
 const PartenairePro = () => {
     return (
         <>
-            <div className="relative z-[-1]">
+            {/*<div className="relative z-[-1]">
                 <img className="w-full h-[500px]" src={Image} />
-            </div>
+    </div>*/}
             <div className="m-6">
                 <p className="indent-4 text-xl">
                     L’insertion professionnelle des diplômés de l’ESSFAR est

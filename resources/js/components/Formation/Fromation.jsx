@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Img1 from "../../images/Data1.png";
-import Img from "../../images/actuaria.jpg";
-import Img3 from "../../images/ingeniereFinanciere1.png";
-import Img4 from "../../images/systeme-dinformation4.png";
+import Img1 from "../../../../public/images/Data1.png";
+import Img from "../../../../public/images/actuaria.jpg";
+import Img3 from "../../../../public/images/ingeniereFinanciere1.png";
+import Img4 from "../../../../public/images/systeme-dinformation4.png";
 
 const FormationsData = [
     {
@@ -44,23 +44,21 @@ const Fromation = () => {
                     Des spécialités à la hauteur des défis du 21è Siècle
                 </h1>
             </div>
-            <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14 md:gap-4 place-items-center">
+            <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 md:gap-4 lg:gap-4 xl:gap-2 place-items-center">
                 {FormationsData.map((formation) => (
                     <Link to={formation.lien}>
-                        <div className="rounded-2xl py-3 bg-white hover:bg-blue-400 hover:text-white relative shadow-xl duration-high group w-[350px]">
-                            <div className="h-[80px] ">
+                        <div className="rounded-2xl bg-white hover:bg-blue-400 hover:text-white relative shadow-xl duration-high group w-[250px]">
+                            <div className="">
                                 <img
                                     src={formation.img}
                                     alt=""
-                                    className="max-w-[200px] h-[100px] block mx-auto transform -translate-y-14
+                                    className="w-[170px] md:w-[200px] lg:w-[180px] xl:w-[180px] xl:h-[110px] h-[100px] block mx-auto transform -translate-y-14
                   group-hover:scale-105 group-hover:rotate-6 duration-300 rounded-full"
                                 />
                             </div>
 
-                            <div className="p-3 text-center">
-                                <h1 className="text-xl font-bold">
-                                    {formation.name}
-                                </h1>
+                            <div className="px-3 text-center">
+                                <h1 className="text-xl ">{formation.name}</h1>
                             </div>
                         </div>
                     </Link>

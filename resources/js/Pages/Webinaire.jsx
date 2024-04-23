@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "../images/wibi.jpg";
+import Image from "../../../public/images/wibi.jpg";
 
 const Webinaire = () => {
     return (
         <>
-            <div>
-                <div className="relative z-[-1]">
-                    <img className="w-full h-[500px] " src={Image} />
+            <div className="relative z-[-1]">
+                <div className="">
+                    <img className="w-full h-[350px] " src={Image} />
                 </div>
 
                 <div className="my-6 px-4 text-xl">

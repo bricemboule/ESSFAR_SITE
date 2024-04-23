@@ -3,8 +3,8 @@ import { GiFoodTruck } from "react-icons/gi";
 import { GrSecure } from "react-icons/gr";
 import { IoFastFood } from "react-icons/io5";
 import Slider from "react-slick";
-import Concours from "../../images/resultats-concours.png";
-import Vector from "../../images/vector3.png";
+import Concours from "../../../../public/images/resultats-concours.png";
+import Vector from "../../../../public/images/vector3.png";
 
 const actualites = [
     {

@@ -1,15 +1,11 @@
 import React from "react";
 import Droit from "../components/MotDirecteur/Droit";
 import Left from "../components/MotDirecteur/Left";
-import Image from "../images/dip.jpg";
 
 const MotDirecteur = () => {
     return (
         <>
             <div className="relative z-[-1]">
-                <img className="w-full h-[250px] md:h-[500px]" src={Image} />
-            </div>
-            <div>
                 <div className="mt-10">
                     <h1 className="text-2xl md:text-6xl text-sky-600 text-center">
                         BIENVENUE A L'ESSFAR
@@ -18,7 +14,7 @@ const MotDirecteur = () => {
             </div>
             <section
                 id="home"
-                className="w-full pt-10 pb-10 flex-cols  md:flex gap-5 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-gray-700"
+                className="w-full pt-5 pb-10 flex-cols  md:flex gap-5 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-gray-700"
             >
                 <Droit />
                 <Left />

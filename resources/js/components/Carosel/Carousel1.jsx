@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import Image1 from "../../images/accueil/Admission1.png";
-import Image7 from "../../images/accueil/image1.png";
-import Image8 from "../../images/accueil/presentation.jpg";
+import Image1 from "../../../../public/images/accueil/Admission1.png";
+import Image7 from "../../../../public/images/accueil/image5.png";
+import Image8 from "../../../../public/images/accueil/image6.png";
 const SliderContent = [
     {
         img: Image1,
@@ -9,12 +9,12 @@ const SliderContent = [
         desc: "",
     },
     {
-        img: Image8,
+        img: Image7,
         titre: "Ouverture internationale",
         desc: "",
     },
     {
-        img: Image7,
+        img: Image8,
         titre: "Excellence Académique",
         desc: "",
     },
@@ -58,14 +58,14 @@ const Carousel1 = () => {
 
     return (
         <div className="z-[-1] relative shadow-lg overflow-hidden">
-            <div className=" h-[300px] md:h-[700px]">
+            <div className=" h-[300px] md:h-[470px]">
                 {SliderContent.map((data, i) => {
                     return (
                         <img
                             src={data.img}
                             key={i}
                             alt="slideImg"
-                            className={`h-full md:h-[700px] w-full absolute object-cover inset-0 duration-[2.5s] ease-out transition-[clip-path] ${
+                            className={`h-[250px] md:h-[500px] w-[100%] xl:w-full absolute object-cover inset-0 duration-[2.5s] ease-out transition-[clip-path] ${
                                 i === active ? "clip-visible" : "clip-hidden"
                             }`}
                         />
@@ -77,7 +77,7 @@ const Carousel1 = () => {
                     className="w-full h-full  object-cover"
                 />
             </div>
-            <div>
+            {/*<div>
                 <button ref={prevRef} id="back" onClick={() => Slide("prev")}>
                     <ion-icon
                         name="chevron-back-outline"
@@ -95,7 +95,7 @@ const Carousel1 = () => {
                         size="large"
                     ></ion-icon>
                 </button>
-            </div>
+            </div>*/}
             <div className="content ">
                 <h1 ref={nameRef} className="text-xl md:text-3xl">
                     {SliderContent[0].titre}

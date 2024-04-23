@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Azure from "../images/Azure.png";
-import Ubo from "../images/Ubo.png";
-import Image from "../images/conc.jpg";
-import Paris from "../images/dauphineFrance.jpg";
-import Tunis from "../images/dauphineTunis.jpg";
-import Estia from "../images/estia.png";
-import Euria from "../images/euria.jpg";
-import Nice from "../images/normandi.png";
+import Azure from "../../../public/images/Azure.png";
+import Ubo from "../../../public/images/Ubo.png";
+import Paris from "../../../public/images/dauphineFrance.jpg";
+import Tunis from "../../../public/images/dauphineTunis.jpg";
+import Estia from "../../../public/images/estia.png";
+import Euria from "../../../public/images/euria.jpg";
+import Nice from "../../../public/images/normandi.png";
 
 const partenaire = [
     {
@@ -50,11 +49,11 @@ const partenaire = [
 const EcolePartenaire = () => {
     return (
         <>
-            <div className="relative z-[-1]">
+            {/*<div className="relative z-[-1]">
                 <img className="w-full h-[600px]" src={Image} />
-            </div>
+    </div>*/}
             <div className="m-6">
-                <p className="indent-4 text-xl">
+                <p className="indent-4 py-3 text-justify text-sm md:text-xl lg:text-xl xl:text-xl">
                     Pour préparer ses étudiants à des enjeux mondiaux et à des
                     défis culturels, l’ouverture internationale est au cœur de
                     la stratégie de l’ESSFAR. Trois axes sont développés :

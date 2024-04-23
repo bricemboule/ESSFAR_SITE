@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Catalogue from "../../pdf/brochures/ESSFAR-Formation-Continue.pdf";
-import Formulaire from "../../pdf/fiche inscription/FICHE-DINSCRIPTION-ESSFAR-FPC.pdf";
-import Image from "../images/assurance.jpg";
+import Image from "../../../public/images/assurance.jpg";
+import Catalogue from "../../../public/pdf/brochures/ESSFAR-Formation-Continue.pdf";
+import Formulaire from "../../../public/pdf/fiche inscription/FICHE-DINSCRIPTION-ESSFAR-FPC.pdf";
 
 const Assurance = () => {
     return (

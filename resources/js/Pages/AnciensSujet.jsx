@@ -2,43 +2,43 @@ import React, { useEffect, useState } from "react";
 import { FaFileDownload } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
-import Aout19A from "../../pdf/sujet/L1/Concours ESSFAR L1 Session AOUT 2019 - Mathematiques VA.pdf";
-import Aout19 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Aout 2019 - Mathematiques VF.pdf";
-import Avr20 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2020 - Mathematiques VF.pdf";
-import Avril21 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2021 - Mathématiques VA.pdf";
-import Avril21A from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2021 - Mathématiques VF.pdf";
-import Avril22 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2022 - Mathématiques.pdf";
-import Avril2 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2023 - Mathématiques VA.pdf";
-import Avril1 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2023 - Mathématiques VF.pdf";
-import Juillet21 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Juillet 2021 - Mathématiques VA.pdf";
-import Juin1 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Juin 2023 - Mathématiques VF.pdf";
-import Juin2 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Juin 2023- Mathématiques VA.pdf";
-import Oct20A from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Octobre 2020 - Mathématiques VA.pdf";
-import Oct20 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Octobre 2020 - Mathématiques VF.pdf";
-import L3Jui20 from "../../pdf/sujet/L3/CONCOURS_ESSFAR_Licence_2020.pdf";
-import L3Sept21 from "../../pdf/sujet/L3/CONCOURS_ESSFAR_Licence_21.pdf";
-import L3vril from "../../pdf/sujet/L3/Concours ESSFAR L3 Session Avril 2020 - Mathematiques VF.pdf";
-import L3Jui22 from "../../pdf/sujet/L3/Concours ESSFAR L3 Session Juillet 2022 - Mathématiques VF.pdf";
-import L3Juin22 from "../../pdf/sujet/L3/Concours ESSFAR L3 Session Juin 2023 - Mathématiques.pdf";
-import L3Sept20 from "../../pdf/sujet/L3/Concours ESSFAR L3 Session Septembre 2020- Maths.pdf";
-import L3Jui from "../../pdf/sujet/L3/Concours ESSFAR L3 Session d'Aout 2019 - Mathematiques.pdf";
-import L39A from "../../pdf/sujet/L3/Concours d'entree en L3 - Session de septembre - Mathematiques VA.pdf";
-import L39 from "../../pdf/sujet/L3/Concours d'entree en L3 - Session de septembre - Mathematiques VF.pdf";
-import L3Jui18 from "../../pdf/sujet/L3/Epreuve de Math Juillet 2018.pdf";
-import L3A18 from "../../pdf/sujet/L3/SESSION D'AOUT 2018 - Epreuve de Mathematiques.pdf";
+import Aout19A from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session AOUT 2019 - Mathematiques VA.pdf";
+import Aout19 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Aout 2019 - Mathematiques VF.pdf";
+import Avr20 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2020 - Mathematiques VF.pdf";
+import Avril21 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2021 - Mathématiques VA.pdf";
+import Avril21A from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2021 - Mathématiques VF.pdf";
+import Avril22 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2022 - Mathématiques.pdf";
+import Avril2 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2023 - Mathématiques VA.pdf";
+import Avril1 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Avril 2023 - Mathématiques VF.pdf";
+import Juillet21 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Juillet 2021 - Mathématiques VA.pdf";
+import Juin1 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Juin 2023 - Mathématiques VF.pdf";
+import Juin2 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Juin 2023- Mathématiques VA.pdf";
+import Oct20A from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Octobre 2020 - Mathématiques VA.pdf";
+import Oct20 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Octobre 2020 - Mathématiques VF.pdf";
+import L3Jui20 from "../../../public/pdf/sujet/L3/CONCOURS_ESSFAR_Licence_2020.pdf";
+import L3Sept21 from "../../../public/pdf/sujet/L3/CONCOURS_ESSFAR_Licence_21.pdf";
+import L3vril from "../../../public/pdf/sujet/L3/Concours ESSFAR L3 Session Avril 2020 - Mathematiques VF.pdf";
+import L3Jui22 from "../../../public/pdf/sujet/L3/Concours ESSFAR L3 Session Juillet 2022 - Mathématiques VF.pdf";
+import L3Juin22 from "../../../public/pdf/sujet/L3/Concours ESSFAR L3 Session Juin 2023 - Mathématiques.pdf";
+import L3Sept20 from "../../../public/pdf/sujet/L3/Concours ESSFAR L3 Session Septembre 2020- Maths.pdf";
+import L3Jui from "../../../public/pdf/sujet/L3/Concours ESSFAR L3 Session d'Aout 2019 - Mathematiques.pdf";
+import L39A from "../../../public/pdf/sujet/L3/Concours d'entree en L3 - Session de septembre - Mathematiques VA.pdf";
+import L39 from "../../../public/pdf/sujet/L3/Concours d'entree en L3 - Session de septembre - Mathematiques VF.pdf";
+import L3Jui18 from "../../../public/pdf/sujet/L3/Epreuve de Math Juillet 2018.pdf";
+import L3A18 from "../../../public/pdf/sujet/L3/SESSION D'AOUT 2018 - Epreuve de Mathematiques.pdf";
 
-import Act5 from "../../pdf/sujet/act/CONCOURS_ESSFAR_Master_2020.pdf";
-import Act3 from "../../pdf/sujet/act/CONCOURS_ESSFAR_Master_21.pdf";
-import Act4 from "../../pdf/sujet/act/CONCOURS_ESSFAR_Master_22-Mathématiques1.pdf";
-import Act2 from "../../pdf/sujet/act/Concours ESSFAR M1 Session Septembre 2020- Maths.pdf";
-import Act1 from "../../pdf/sujet/act/Concours d'entree en Master I - Session de septembre - Mathematiques.pdf";
+import Act5 from "../../../public/pdf/sujet/act/CONCOURS_ESSFAR_Master_2020.pdf";
+import Act3 from "../../../public/pdf/sujet/act/CONCOURS_ESSFAR_Master_21.pdf";
+import Act4 from "../../../public/pdf/sujet/act/CONCOURS_ESSFAR_Master_22-Mathématiques1.pdf";
+import Act2 from "../../../public/pdf/sujet/act/Concours ESSFAR M1 Session Septembre 2020- Maths.pdf";
+import Act1 from "../../../public/pdf/sujet/act/Concours d'entree en Master I - Session de septembre - Mathematiques.pdf";
 
 import {
     default as Sept20A,
     default as Sept21A,
-} from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Septembre 2020 - Mathématiques VA.pdf";
-import Sept20 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Septembre 2020 - Mathématiques VF.pdf";
-import Sept21 from "../../pdf/sujet/L1/Concours ESSFAR L1 Session Septembre 2021 - Mathématiques VF.pdf";
+} from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Septembre 2020 - Mathématiques VA.pdf";
+import Sept20 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Septembre 2020 - Mathématiques VF.pdf";
+import Sept21 from "../../../public/pdf/sujet/L1/Concours ESSFAR L1 Session Septembre 2021 - Mathématiques VF.pdf";
 
 const niveau = [
     {

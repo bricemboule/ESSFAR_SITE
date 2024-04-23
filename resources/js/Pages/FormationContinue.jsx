@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Banke from "../images/banqueFinance.jpeg";
-import Stat from "../images/big.jpg";
-import Image from "../images/concept.jpg";
-import Leader from "../images/leadership.png";
-import Risk from "../images/risk.jpeg";
+import Banke from "../../../public/images/banqueFinance.jpeg";
+import Stat from "../../../public/images/big.jpg";
+import Image from "../../../public/images/cont1.webp";
+import Leader from "../../../public/images/leadership.png";
+import Risk from "../../../public/images/risk.jpeg";
 
 const formation = [
     {
@@ -37,10 +37,10 @@ const FormationContinue = () => {
     return (
         <div>
             <div className="relative z-[-1]">
-                <img className="w-full h-[500px]" src={Image} />
+                <img className="w-full h-[350px]" src={Image} />
             </div>
             <div className="text-xl">
-                <p className="p-6 text-xl indent-4">
+                <p className="px-6 py-2 text-sm md:text-xl lg:text-xl xl:text-xl text-justify indent-4">
                     La formation continue de l’ESSFAR a pour vocation
                     d’accompagner les professionnels dans les différentes étapes
                     de leur carrière en leur apportant des outils pour se
@@ -49,7 +49,7 @@ const FormationContinue = () => {
                 </p>
             </div>
 
-            <div className="py-6 px-2 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-20 place-items-center">
+            <div className=" px-2 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-20 place-items-center">
                 {formation.map((data) => (
                     <div className="flex items-center gap-6 p-8">
                         <div>
@@ -64,7 +64,9 @@ const FormationContinue = () => {
                             <h2 className="text-xl text-blue-500 capitalize">
                                 {data.titre}
                             </h2>
-                            <p className="text-sm text-gray-500">{data.desc}</p>
+                            <p className="text-xl text-gray-500 text-justify">
+                                {data.desc}
+                            </p>
                             <p className="px-8 py-2 italic text-red-500">
                                 <Link to={data.lien}>Plus de details</Link>{" "}
                             </p>

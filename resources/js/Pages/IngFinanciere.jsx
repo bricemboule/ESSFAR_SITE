@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/banque.jpg";
+import Image from "../../../public/images/banque.jpg";
 
 const IngFinanciere = () => {
     return (

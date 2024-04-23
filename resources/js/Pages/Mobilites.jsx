@@ -1,11 +1,15 @@
 import React from "react";
-import Image from "../images/mobilite.jpg";
+import { Link } from "react-router-dom";
+import Image from "../../../public/images/mobilite.jpg";
 
 const Mobilites = () => {
     return (
         <>
             <div className="relative z-[-1]">
-                <img className="w-full h-[600px]" src={Image} />
+                <img
+                    className="w-full sm:h-[150px] sm:text-sm md:h-[350px] lg:h-[350px] xl:h-[350px]"
+                    src={Image}
+                />
             </div>
             <div className="m-8">
                 <h1 className="text-center text-sky-500 text-3xl">
@@ -14,7 +18,13 @@ const Mobilites = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-x-24 place-items-center">
                     <div className="p-4">
                         <h1 className="text-xl text-red-500 underline">
-                            Université Paris Dauphine – Paris
+                            <Link
+                                to="https://dauphine.psl.eu/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Université Paris Dauphine – Paris
+                            </Link>
                         </h1>
                         <div className="px-8">
                             <ul className="list-disc text-xl">
@@ -49,7 +59,13 @@ const Mobilites = () => {
                     </div>
                     <div className="p-4">
                         <h1 className="text-xl text-red-500 underline">
-                            Université Paris Dauphine – Tunis
+                            <Link
+                                to="https://tunis.dauphine.psl.eu/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Université Paris Dauphine – Tunis
+                            </Link>
                         </h1>
                         <div className="px-8">
                             <ul className="list-disc text-xl">
@@ -65,8 +81,13 @@ const Mobilites = () => {
                     </div>
                     <div className="p-4">
                         <h1 className="text-xl text-red-500 underline">
-                            {" "}
-                            Université de Nice Sophia – Antipolis{" "}
+                            <Link
+                                to="https://unt.unice.fr/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Université de Nice Sophia – Antipolis
+                            </Link>
                         </h1>
                         <div className="px-8">
                             <ul className="list-disc text-xl">
@@ -84,20 +105,53 @@ const Mobilites = () => {
                     </div>
                     <div className="p-4">
                         <h1 className="text-xl text-red-500 underline">
-                            {" "}
-                            Euria Brest{" "}
+                            <Link
+                                to="https://www.univ-brest.fr/euria/fr/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Euria Brest
+                            </Link>
                         </h1>
                         <div className="px-8">
                             <ul className="list-disc text-xl">
-                                <li>
-                                    Master IMAFA : Informatique et Mathématiques
-                                    Appliquées à la Finance et à l’Assurance
-                                </li>
-                                <li>Master Data Science</li>
-                                <li>
-                                    Master Modélisation Stochastique et
-                                    Statistique
-                                </li>
+                                <li>Licence en Actuariat</li>
+                                <li>Master en Actuariat</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="p-4">
+                        <h1 className="text-xl text-red-500 underline">
+                            {" "}
+                            <Link
+                                to="https://www.univ-brest.fr/fr"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Université Bretagne Occidentale{" "}
+                            </Link>
+                        </h1>
+                        <div className="px-8">
+                            <ul className="list-disc text-xl">
+                                <li>Licence en mathématiques appliquées</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="p-4">
+                        <h1 className="text-xl text-red-500 underline">
+                            {" "}
+                            <Link
+                                target="_blank"
+                                rel="noreferrer"
+                                to="https://www.estia.fr/"
+                            >
+                                ESTIA
+                            </Link>
+                        </h1>
+                        <div className="px-8">
+                            <ul className="list-disc text-xl">
+                                <li>Licence en Actuariat</li>
+                                <li>Master en Actuariat</li>
                             </ul>
                         </div>
                     </div>

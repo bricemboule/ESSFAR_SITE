@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import Concours from "../../images/concours.png";
+import Concours from "../../../../public/images/concours.png";
+
 const actualites = [
     {
         id: 1,
@@ -40,7 +41,7 @@ const Section = () => {
             <div
                 data-aos="zoom-in"
                 data-aos-duration="300"
-                className="grid grid-cols-1 max-w-[65%] md:max-w-[30%] max-h-[8%] mx-auto gap-6"
+                className="grid grid-cols-1 w-[65%] md:w-[20%] max-h-[8%] mx-auto gap-6"
             >
                 <Slider {...settings}>
                     {actualites.map((data) => {
@@ -55,7 +56,7 @@ const Section = () => {
                                         src={data.img}
                                         alt=""
                         />*/}
-                                    <p className=" text-red-500 text-sm md:text-xl  italic">
+                                    <p className=" text-gray-500 text-sm md:text-xl  italic">
                                         Prochaine session du concours d'entrée
                                         en 1<sup>ère</sup>, 2<sup>e</sup>, 3
                                         <sup>e</sup> et 4<sup>e</sup> année :
@@ -70,10 +71,10 @@ const Section = () => {
                     })}
                 </Slider>
             </div>
-            <div className=" w-full md:w-[55%] ml-36  md:text-5xl text-center md:ml-80">
+            <div className=" w-full md:w-[55%] flex gap-6 md:text-5xl text-center md:ml-80">
                 <p className="text-center text-sm md:text-xl">
                     <ul className="text-center">
-                        <li className="flex gap-2 italic items-center space-x-3 rtl:space-x-reverse">
+                        <li className="flex gap-1 italic items-center space-x-1 rtl:space-x-reverse">
                             <svg
                                 class="w-6 h-6 text-red-500 dark:text-white"
                                 aria-hidden="true"
@@ -95,7 +96,7 @@ const Section = () => {
                                 Excellence académique
                             </span>
                         </li>
-                        <li className="flex gap-2 italic items-center space-x-3 rtl:space-x-reverse">
+                        <li className="flex gap-1 italic items-center space-x-1 rtl:space-x-reverse">
                             <svg
                                 class="w-6 h-6 text-red-500 dark:text-white"
                                 aria-hidden="true"
@@ -117,7 +118,11 @@ const Section = () => {
                                 Insertion professionnelle rapide
                             </span>
                         </li>
-                        <li className="flex items-center italic gap-2 space-x-3 rtl:space-x-reverse">
+                    </ul>
+                </p>
+                <p className="text-center text-sm md:text-xl">
+                    <ul className="text-center">
+                        <li className="flex items-center italic gap-1 space-x-1 rtl:space-x-reverse">
                             <svg
                                 class="w-6 h-6 text-red-500 dark:text-white"
                                 aria-hidden="true"
@@ -139,7 +144,7 @@ const Section = () => {
                                 Ouverture internationale
                             </span>
                         </li>
-                        <li className="flex items-center italic space-x-3 gap-2 rtl:space-x-reverse">
+                        <li className="flex items-center italic space-x-1 gap-1 rtl:space-x-reverse">
                             <svg
                                 class="w-6 h-6 text-red-500 dark:text-white"
                                 aria-hidden="true"

@@ -1,14 +1,17 @@
 import React from "react";
-import Image from "../images/init.jpg";
+import Image from "../../../public/images/ini.jpg";
 
 const Incubateur = () => {
     return (
         <>
             <div className="relative z-[-1]">
-                <img className="w-full h-[400px]" src={Image} />
+                <img
+                    className="w-full sm:h-[150px] md:h-[350px] lg:h-[350px] xl:h-[350px]"
+                    src={Image}
+                />
             </div>
             <div className="my-5">
-                <p className="indent-2 px-3">
+                <p className="indent-2 px-3 text-justify">
                     L’incubateur de l’ESSFAR a pour mission d’encourager
                     l’esprit d’innovation et l’entrepreneuriat en mettant en
                     place un environnement propice à la création d’entreprises

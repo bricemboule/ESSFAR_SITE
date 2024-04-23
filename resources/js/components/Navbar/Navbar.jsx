@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { IoCloseSharp, IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import Logo from "../../images/Logo-ESSFAR.png";
+import Logo from "../../../../public/images/Logo-ESSFAR.png";
 import Header from "../Header";
 import Button from "./Button";
 import NavLink from "./NavLink";
@@ -32,7 +32,10 @@ const Navbar = () => {
 
                 <ul className=" md:flex hidden items-center font-[Times New Roman] gap-10">
                     <li>
-                        <Link to="/" className="py-7 px-3 inline-block text-xl">
+                        <Link
+                            to="/"
+                            className="py-7 px-3 inline-block text-xl text-sky-500"
+                        >
                             <FaHome />
                         </Link>
                     </li>
@@ -52,10 +55,7 @@ const Navbar = () => {
                     }`}
                 >
                     <li>
-                        <Link
-                            to="google.com"
-                            className="py-7 px-3 inline-block text-xl"
-                        >
+                        <Link to="/" className="py-7 px-3 inline-block text-xl">
                             <FaHome />
                         </Link>
                     </li>

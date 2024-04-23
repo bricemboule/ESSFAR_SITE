@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="bg-sky-600 h-10 flex items-center justify-around gap-6 text-white">
+        <div className="bg-sky-500 h-10 flex items-center justify-around gap-6 text-white">
             <div className="flex md:flex-row items-center gap-1 ">
-                <GiRotaryPhone className="md:text-md hidden md:block" />
+                <GiRotaryPhone className="md:text-md sm:text-sm hidden md:block" />
                 <p className=""> 697-03-83-27 / 699-83-53-96 </p>
             </div>
             <div className="flex flex-row items-center gap-1">

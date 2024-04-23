@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/inscription.jpg";
+import Image from "../../../public/images/inscription.jpg";
 
 const FraisIncription = () => {
     return (
@@ -8,7 +8,7 @@ const FraisIncription = () => {
                 <img className="w-full h-[600px]" src={Image} />
             </div>
             <div className="my-8">
-                <h1 className="text-sky-500 text-center text-3xl">Frais</h1>
+                <h1 className="text-red-500 text-center text-3xl">Frais</h1>
                 <div className="py-5">
                     <div className="flex flex-col p-3">
                         <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -127,7 +127,7 @@ const FraisIncription = () => {
                 </div>
             </div>
             <div className="my-10">
-                <h1 className="text-sky-500 text-center text-3xl">
+                <h1 className="text-red-500 text-center text-3xl">
                     Modalités de règlement de la scolarité
                 </h1>
                 <div className="py-5 ">

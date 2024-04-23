@@ -3,9 +3,9 @@ import React from "react";
 const LicenceInfo = () => {
     return (
         <div>
-            <div className="relative">
+            {/*<div className="relative">
                 <img className="w-full h-[500px]" src={Image} />
-            </div>
+    </div>*/}
             <div>
                 <h1 className="text-center text-gray-500 underline">
                     Licence – Informatique des organisations
