@@ -30,6 +30,7 @@ import Mobilites from "../Pages/Mobilites";
 import MotDirecteur from "../Pages/MotDirecteur";
 import PartenairePro from "../Pages/PartenairePro";
 import ProjetPedagogique from "../Pages/ProjetPedagogique";
+import SI from "../Pages/SI";
 import Webinaire from "../Pages/Webinaire";
 
 export default function Main() {
@@ -77,7 +78,7 @@ export default function Main() {
                     />
                     <Route
                         path="/formation/formation-initiale/Systeme-information"
-                        element={<Finance />}
+                        element={<SI />}
                     />
 
                     <Route

@@ -4,7 +4,6 @@ import { IoCloseSharp, IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Logo from "../../../../public/images/Logo-ESSFAR.png";
 import Header from "../Header";
-import Button from "./Button";
 import NavLink from "./NavLink";
 import Section from "./Section";
 
@@ -16,11 +15,16 @@ const Navbar = () => {
             <Header />
             <div className="flex items-center font-medium justify-around">
                 <div className="z-50 p-3 md:w-auto w-full flex justify-between">
-                    <img
-                        src={Logo}
-                        alt="Logo ESSFAR"
-                        className="md:cursor-pointer h-12"
-                    />
+                    <div className="flex flex-col">
+                        <img
+                            src={Logo}
+                            alt="Logo ESSFAR"
+                            className="md:cursor-pointer h-12"
+                        />
+                        <span className="text-sm italic text-sky-500">
+                            L'école autrement
+                        </span>
+                    </div>
 
                     <div
                         className="text-3xl md:hidden"
@@ -43,9 +47,9 @@ const Navbar = () => {
                     <NavLink />
                 </ul>
 
-                <div className="md:block hidden">
+                {/*<div className="md:block hidden">
                     <Button />
-                </div>
+    </div>*/}
 
                 {/* Menu a la vue d'un telephone */}
 
@@ -62,9 +66,9 @@ const Navbar = () => {
 
                     <NavLink />
 
-                    <div className="py-5">
+                    {/*<div className="py-5">
                         <Button />
-                    </div>
+                </div>*/}
                 </ul>
             </div>
             <Section />

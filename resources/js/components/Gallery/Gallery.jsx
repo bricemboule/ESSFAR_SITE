@@ -11,7 +11,7 @@ const Gallery = () => {
     return (
         <div className="my-12 mx-8">
             <h1 className="text-6xl text-center font-bold font-tangeri">
-                Notre Gallery
+                Notre Galerie
             </h1>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-4">
                 {images.map((data) => (

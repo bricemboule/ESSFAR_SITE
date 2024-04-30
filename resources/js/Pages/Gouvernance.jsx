@@ -1,5 +1,6 @@
 import React from "react";
 import pat from "../../../public/images/avatar.png";
+import patF from "../../../public/images/avatarF.png";
 const equipe = [
     {
         id: 1,
@@ -18,9 +19,9 @@ const equipe = [
     {
         id: 3,
         poste: "Manager de la communication et relation avec les entreprises",
-        name: "Myriam MAON",
+        name: "Myriam MAKON",
         titre: "Mme",
-        img: pat,
+        img: patF,
     },
 ];
 
@@ -100,13 +101,13 @@ const Gouvernance = () => {
             <div className="m-8">
                 <div className=" text-xl">
                     <div className="p-10">
-                        <h1 className="text-4xl text-center text-blue-500">
+                        <h1 className="sm:text-2xl md:text-4xl xl:text-4xl lg:text-4xl text-center text-sky-500">
                             L'équipe dirigeante
                         </h1>
-                        <div className="py-6 px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-30 place-items-center">
+                        <div className="py-4 px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:gap-x-18 xl:gap-x-18 place-items-center">
                             {equipe.map((data) => (
-                                <div className="flex justify-evenly gap-2 w-250">
-                                    <div className="rounded-full">
+                                <div className="flex-cols md:flex text-center lg:flex xl:flex justify-evenly gap-2 md:gap-2 lg:gap-2 xl:gap-2 w-250">
+                                    <div className="rounded-full text-center">
                                         <img
                                             src={data.img}
                                             alt=""
@@ -128,13 +129,13 @@ const Gouvernance = () => {
                 </div>
 
                 <div className="px-10 text-xl">
-                    <div className="p-10">
-                        <h1 className="text-4xl text-center text-blue-500">
+                    <div className="p-5">
+                        <h1 className="sm:text-2xl md:text-4xl xl:text-4xl lg:text-4xl text-center text-sky-500">
                             Le conseil scientifique
                         </h1>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-24 place-items-center">
+                        <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-24 lg:gap-x-24 xl:gap-x-24 place-items-center">
                             {conseil.map((data) => (
-                                <div className="flex justify-evenly gap-2 p-6 w-[400px]">
+                                <div className="flex-cols md:flex lg:flex xl:flex text-center justify-evenly gap-2 p-6 w-[400px]">
                                     <div className="rounded-full">
                                         <img
                                             src={data.img}

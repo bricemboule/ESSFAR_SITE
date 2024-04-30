@@ -452,13 +452,14 @@ const AnciensSujet = () => {
                                     {data.session}
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-5 place-items-center">
-                                    {data.sujet.map((data) => (
+                                    {data.sujet.map((da) => (
                                         <div className="flex items-center gap-2 py-2">
-                                            <p>{data.intitule}</p>
+                                            <p>{da.intitule}</p>
                                             <Link
-                                                to={data.fichier}
+                                                to={da.fichier}
                                                 className="text-red-500"
-                                                download="Catalogue-de-formation"
+                                                download={da.intitule}
+                                                {...data.session}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -509,13 +510,14 @@ const AnciensSujet = () => {
                                     {data.session}
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-20 place-items-center">
-                                    {data.sujet.map((data) => (
+                                    {data.sujet.map((da) => (
                                         <div className="flex items-center gap-2">
-                                            <p>{data.intitule}</p>
+                                            <p>{da.intitule}</p>
                                             <Link
-                                                to={data.fichier}
+                                                to={da.fichier}
                                                 className="text-red-500"
-                                                download="Catalogue-de-formation"
+                                                download={da.intitule}
+                                                {...data.session}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -538,13 +540,14 @@ const AnciensSujet = () => {
                                     {data.session}
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 md:gap-x-20 place-items-center">
-                                    {data.sujet.map((data) => (
+                                    {data.sujet.map((da) => (
                                         <div className="flex items-center gap-2">
-                                            <p>{data.intitule}</p>
+                                            <p>{da.intitule}</p>
                                             <Link
-                                                to={data.fichier}
+                                                to={da.fichier}
                                                 className="text-red-500"
-                                                download="Catalogue-de-formation"
+                                                download={da.intitule}
+                                                {...data.session}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -565,13 +568,14 @@ const AnciensSujet = () => {
                                     {data.session}
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-20 place-items-center">
-                                    {data.sujet.map((data) => (
+                                    {data.sujet.map((da) => (
                                         <div className="flex items-center gap-2">
-                                            <p>{data.intitule}</p>
+                                            <p>{da.intitule}</p>
                                             <Link
-                                                to={data.fichier}
+                                                to={da.fichier}
                                                 className="text-red-500"
-                                                download="Catalogue-de-formation"
+                                                download={da.intitule}
+                                                {...data.session}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -590,13 +594,14 @@ const AnciensSujet = () => {
                                     {data.session}
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-20 place-items-center">
-                                    {data.sujet.map((data) => (
+                                    {data.sujet.map((da) => (
                                         <div className="flex items-center gap-2">
-                                            <p>{data.intitule}</p>
+                                            <p>{da.intitule}</p>
                                             {/*<Link
-                                                to={data.fichier}
+                                                to={da.fichier}
                                                 className="text-red-500"
-                                                download="Catalogue-de-formation"
+                                                download={da.intitule}
+                                                {...data.session}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >

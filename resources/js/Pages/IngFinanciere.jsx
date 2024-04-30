@@ -5,7 +5,10 @@ const IngFinanciere = () => {
     return (
         <div>
             <div className="relative z-[-1]">
-                <img className="w-full h-[500px]" src={Image} />
+                <img
+                    className="w-full h-[250px] xl:h-[350px] lg:h-[350px] md:h-[350px]"
+                    src={Image}
+                />
             </div>
             <div className="m-4">
                 <h1 className="text-center text-sky-500 underline text-3xl">
@@ -88,7 +91,7 @@ const IngFinanciere = () => {
 
                 <div className="p-4">
                     <h3 className="text-center underline text-2xl text-red-500">
-                        Débouches
+                        Débouchés
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-20 place-items-center">
                         <div className="p-4 text-xl">

@@ -108,7 +108,7 @@ export const links = [
             },
         ],
     },
-    {
+    /*{
         nom: "La vie à L'ESSFAR",
         submenu: true,
         liens: [
@@ -121,5 +121,5 @@ export const links = [
                 ],
             },
         ],
-    },
+    },*/
 ];

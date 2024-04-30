@@ -65,13 +65,13 @@ const ProjetPedagogique = () => {
     </div>*/}
             <div className="m-8">
                 <p className="text-3xl text-center">
-                    Notre projet pédagogique s’appuie sur quatre valeurs clées :
+                    Notre projet pédagogique s’appuie sur quatre valeurs clés :
                 </p>
 
                 <div className="m-8">
                     {projet.map((data) => (
                         <div className="p-6">
-                            <h1 className="text-3xl text-center text-blue-500">
+                            <h1 className="text-3xl text-center text-sky-500">
                                 {data.name} :
                             </h1>
                             {data.items.map((item) => (

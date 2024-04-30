@@ -12,7 +12,9 @@ import Douala from "../../../../public/images/doul.jpg";
 import Esilv from "../../../../public/images/esilv.jpg";
 import Estia from "../../../../public/images/estia.png";
 import Euria from "../../../../public/images/euria.jpg";
-import Karbura from "../../../../public/images/karbura.png";
+{
+    /*import Karbura from "../../../../public/images/karbura.png";*/
+}
 const academique = [
     {
         id: 1,
@@ -91,10 +93,12 @@ const professionnel = [
         img: Acam,
     },
     {
+        /*{
         id: 6,
         name: "KARBURA",
         text: "Societe technologie proposant des solutions informatiques pour des organisations",
         img: Karbura,
+    },*/
     },
 ];
 

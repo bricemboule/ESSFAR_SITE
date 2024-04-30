@@ -36,17 +36,16 @@ const NavLink = () => {
                                     {l.liens.map((sublin) => (
                                         <div className="">
                                             {sublin.lien.map((line) => (
-                                                <div className="hover:bg-blue-500 hover:text-white h-10">
-                                                    <li className="text-sm p-3 hover:text-white">
-                                                        <Link
-                                                            to={line.link}
-                                                            className="text-base"
-                                                        >
-                                                            {" "}
+                                                <Link
+                                                    to={line.link}
+                                                    className="text-base"
+                                                >
+                                                    <div className="hover:bg-blue-500 hover:text-white h-10">
+                                                        <li className="text-sm py-3 px-2 hover:text-white">
                                                             {line.nom}
-                                                        </Link>
-                                                    </li>
-                                                </div>
+                                                        </li>
+                                                    </div>
+                                                </Link>
                                             ))}
                                         </div>
                                     ))}

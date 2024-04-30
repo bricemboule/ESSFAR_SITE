@@ -1,25 +1,21 @@
 import React from "react";
 import Slider from "react-slick";
-import Concours from "../../../../public/images/concours.png";
 
 const actualites = [
     {
         id: 1,
         name: "Prochain Concours",
         text: "La prochaine session du concours d'entrée en première, deuxième, troisième et quatrième année aura lieu le 13 Avril 2024",
-        img: Concours,
     },
     {
         id: 1,
         name: "Prochain Concours",
         text: "La prochaine session du concours d'entrée en première, deuxième, troisième et quatrième année aura lieu le 13 Avril 2024",
-        img: Concours,
     },
     {
         id: 1,
         name: "Prochain Concours",
         text: "La prochaine session du concours d'entrée en première, deuxième, troisième et quatrième année aura lieu le 13 Avril 2024",
-        img: Concours,
     },
 ];
 
@@ -41,7 +37,7 @@ const Section = () => {
             <div
                 data-aos="zoom-in"
                 data-aos-duration="300"
-                className="grid grid-cols-1 w-[65%] md:w-[20%] max-h-[8%] mx-auto gap-6"
+                className="grid grid-cols-1 w-[60%] md:w-[30%] lg:w-[30%] xl:w-[30%] max-h-[6%] mx-auto gap-6"
             >
                 <Slider {...settings}>
                     {actualites.map((data) => {
@@ -71,8 +67,8 @@ const Section = () => {
                     })}
                 </Slider>
             </div>
-            <div className=" w-full md:w-[55%] flex gap-6 md:text-5xl text-center md:ml-80">
-                <p className="text-center text-sm md:text-xl">
+            <div className="border-solid  border-2 rounded-br-lg border-sky-500 w-full md:w-[55%] flex gap-16 md:gap-14 lg:gap-12 xl:gap-12 md:text-5xl text-center md:ml-80">
+                <p className="text-center px-2 py-2 text-sm md:text-xl">
                     <ul className="text-center">
                         <li className="flex gap-1 italic items-center space-x-1 rtl:space-x-reverse">
                             <svg
@@ -92,7 +88,7 @@ const Section = () => {
                                     d="M4.248 19C3.22 15.77 5.275 8.232 12.466 8.232V6.079a1.025 1.025 0 0 1 1.644-.862l5.479 4.307a1.108 1.108 0 0 1 0 1.723l-5.48 4.307a1.026 1.026 0 0 1-1.643-.861v-2.154C5.275 13.616 4.248 19 4.248 19Z"
                                 />
                             </svg>
-                            <span className="text-sky-600">
+                            <span className="text-sky-500">
                                 Excellence académique
                             </span>
                         </li>
@@ -114,13 +110,13 @@ const Section = () => {
                                     d="M4.248 19C3.22 15.77 5.275 8.232 12.466 8.232V6.079a1.025 1.025 0 0 1 1.644-.862l5.479 4.307a1.108 1.108 0 0 1 0 1.723l-5.48 4.307a1.026 1.026 0 0 1-1.643-.861v-2.154C5.275 13.616 4.248 19 4.248 19Z"
                                 />
                             </svg>
-                            <span className="text-sky-600">
+                            <span className="text-sky-500">
                                 Insertion professionnelle rapide
                             </span>
                         </li>
                     </ul>
                 </p>
-                <p className="text-center text-sm md:text-xl">
+                <p className="text-center px-2 py-2 text-sm md:text-xl">
                     <ul className="text-center">
                         <li className="flex items-center italic gap-1 space-x-1 rtl:space-x-reverse">
                             <svg
@@ -140,7 +136,7 @@ const Section = () => {
                                     d="M4.248 19C3.22 15.77 5.275 8.232 12.466 8.232V6.079a1.025 1.025 0 0 1 1.644-.862l5.479 4.307a1.108 1.108 0 0 1 0 1.723l-5.48 4.307a1.026 1.026 0 0 1-1.643-.861v-2.154C5.275 13.616 4.248 19 4.248 19Z"
                                 />
                             </svg>
-                            <span className="text-sky-600">
+                            <span className="text-sky-500">
                                 Ouverture internationale
                             </span>
                         </li>
@@ -162,7 +158,7 @@ const Section = () => {
                                     d="M4.248 19C3.22 15.77 5.275 8.232 12.466 8.232V6.079a1.025 1.025 0 0 1 1.644-.862l5.479 4.307a1.108 1.108 0 0 1 0 1.723l-5.48 4.307a1.026 1.026 0 0 1-1.643-.861v-2.154C5.275 13.616 4.248 19 4.248 19Z"
                                 />
                             </svg>
-                            <span className="text-sky-600">
+                            <span className="text-sky-500">
                                 Bourse d'excellence
                             </span>
                         </li>

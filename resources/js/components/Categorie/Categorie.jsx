@@ -33,7 +33,12 @@ const Categorie = () => {
                             Une Offre de Formation à Votre Portée
                         </h1>
                     </div>
-                    <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-2 place-items-center">
+                    <div
+                        className="pt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-2 place-items-center "
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                    >
                         {FormationsData.map((formation) => (
                             <div className="w-80">
                                 <div className="py-2">

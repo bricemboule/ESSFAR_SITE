@@ -36,7 +36,7 @@ const cycle = [
         desc: "Le cycle Master permet d’approfondir ses connaissances et de se spécialiser. La validation de ce cycle donne lieu à un diplôme de Master 2 professionnel.",
         specialite: [
             {
-                titre: "Actuariat",
+                titre: "Master Actuariat",
                 img: Actuariat,
                 lien: "/formation/formation-initiale/actuariat",
                 desc: " Devenez spécialiste en gestion des risques dans les domaines de l’assurance, de la finance et de la protection sociale.",
@@ -97,7 +97,7 @@ const FormationIntiale = () => {
                                         />
                                     </div>
                                     <div className="p-2 text-center">
-                                        <h2 className="text-xl text-blue-500">
+                                        <h2 className="text-xl text-sky-500">
                                             {data.titre}
                                         </h2>
                                         <p className="text-sm text-gray-500 text-justify">
