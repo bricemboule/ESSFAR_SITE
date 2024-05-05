@@ -33,11 +33,11 @@ const Section = () => {
         pauseOnFocus: true,
     };
     return (
-        <div className=" flex-cols md:flex items-center justify-around gap-5 h-13">
+        <div className="z-[-1] flex-cols md:flex items-center justify-around gap-5 h-13">
             <div
                 data-aos="zoom-in"
                 data-aos-duration="300"
-                className="grid grid-cols-1 w-[60%] md:w-[30%] lg:w-[30%] xl:w-[30%] max-h-[6%] mx-auto gap-6"
+                className=" grid grid-cols-1 lg:w-[20%] xl:w-[20%] max-h-[6%] mx-auto gap-6 "
             >
                 <Slider {...settings}>
                     {actualites.map((data) => {
@@ -67,7 +67,7 @@ const Section = () => {
                     })}
                 </Slider>
             </div>
-            <div className="border-solid  border-2 rounded-br-lg border-sky-500 w-full md:w-[55%] flex gap-16 md:gap-14 lg:gap-12 xl:gap-12 md:text-5xl text-center md:ml-80">
+            <div className="border-solid  border-2 rounded-br-lg border-sky-500 w-full flex gap-30 md:gap-14 xl:w-[50%] lg:w-[50%] md:text-5xl text-center">
                 <p className="text-center px-2 py-2 text-sm md:text-xl">
                     <ul className="text-center">
                         <li className="flex gap-1 italic items-center space-x-1 rtl:space-x-reverse">

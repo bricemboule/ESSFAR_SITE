@@ -28,26 +28,29 @@ const Categorie = () => {
         <>
             <div className="mt-12">
                 <div className="container pt-6">
-                    <div className="pt-4 text-center mb-5 max-w-[800px] mx-auto">
-                        <h1 className="text-center text-sky-500 text-6xl font-tangeri">
-                            Une Offre de Formation à Votre Portée
-                        </h1>
-                    </div>
+                    <h1 className="text-center text-sky-500 text-4xl md:text-5xl xl:text-6xl lg:text-6xl font-tangeri">
+                        Une Offre de Formation à Votre Portée
+                    </h1>
+
                     <div
-                        className="pt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-2 place-items-center "
+                        className="pt-2 grid sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-2 md:gap-16 sm:place-items-center xl:place-items-center lg:place-items-center"
                         data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000"
                     >
                         {FormationsData.map((formation) => (
-                            <div className="w-80">
+                            <div className="sm:w-80 md:w-60 lg:w-80 xl:w-80">
                                 <div className="py-2">
-                                    <h1 className="font-tangeri text-5xl">
+                                    <h1 className="font-tangeri text-4xl md:text-5xl lg:text-5xl xl:text-5xl">
                                         {formation.name}
                                     </h1>
                                 </div>
                                 <div className="text-center rounded-md border-4">
-                                    <img src={formation.img} alt="" />
+                                    <img
+                                        src={formation.img}
+                                        alt=""
+                                        className=""
+                                    />
                                 </div>
                                 <p className="indent-2">
                                     {formation.description}

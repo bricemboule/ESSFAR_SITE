@@ -23,7 +23,7 @@ const Footer = () => {
                         className="relative block h-[100px] fill-white"
                     ></path>
                 </svg>
-                <div className="grid lg:grid-cols-3 gap-20 sm:grid-cols-1 p-20">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-20 sm:grid-cols-1 p-20">
                     <div>
                         <li className="text-[22px] list-none font-semibold text-sky-500 py-2 uppercase">
                             ESSFAR

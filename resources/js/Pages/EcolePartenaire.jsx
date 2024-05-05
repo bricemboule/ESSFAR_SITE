@@ -77,9 +77,9 @@ const EcolePartenaire = () => {
                     Nos partenaires à l'international
                 </h1>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-24 place-items-center">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 md:gap-x-24 place-items-center">
                 {partenaire.map((data) => (
-                    <div className="flex justify-evenly gap-2 p-6 w-[400px]">
+                    <div className="flex justify-evenly gap-2 p-6">
                         <Link to={data.lien} target="_blank" rel="noreferrer">
                             <div className="">
                                 <img

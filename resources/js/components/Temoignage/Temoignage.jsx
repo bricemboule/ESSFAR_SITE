@@ -43,14 +43,14 @@ const Temoignage = () => {
             <div data-aos="fade-up" data-aos-duration="300" className="m-20">
                 <div className="container">
                     <div className="text-center mb-5 mx-auto">
-                        <h1 className="md:text-5xl text-4xl md:font-bold font-tangeri">
+                        <h1 className="text-4xl md:text-6xl xl:text-6xl lg:text-6xl font-tangeri">
                             Ils temoignent de leurs passages à l'ESSFAR
                         </h1>
                     </div>
                     <div
                         data-aos="zoom-in"
                         data-aos-duration="300"
-                        className="grid md:grid-cols-3 sm:grid-cols-1 mx-auto gap-6"
+                        className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 mx-auto gap-6"
                     >
                         {testimonialData.map((data) => {
                             return (

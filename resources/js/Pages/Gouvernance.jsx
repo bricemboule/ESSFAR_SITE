@@ -1,27 +1,36 @@
 import React from "react";
-import pat from "../../../public/images/avatar.png";
-import patF from "../../../public/images/avatarF.png";
+import {
+    default as nguetseng,
+    default as noutch,
+} from "../../../public/images/avatar.png";
+import com from "../../../public/images/gouvernance/com.png";
+import dac from "../../../public/images/gouvernance/dac.png";
+import dg from "../../../public/images/gouvernance/dg.png";
+import fotso from "../../../public/images/gouvernance/fotso.png";
+import kendah from "../../../public/images/gouvernance/kendah.png";
+import kouamo from "../../../public/images/gouvernance/kouamo.png";
+import sek from "../../../public/images/gouvernance/sek.png";
 const equipe = [
     {
         id: 1,
         poste: "Directeur Général",
         name: "Patrick SEUMEN TONOU",
         titre: "Dr",
-        img: pat,
+        img: dg,
     },
     {
         id: 2,
         poste: "Directeur Académique",
         name: "Etienne TSAMO",
         titre: "Pr",
-        img: pat,
+        img: dac,
     },
     {
         id: 3,
         poste: "Manager de la communication et relation avec les entreprises",
         name: "Myriam MAKON",
         titre: "Mme",
-        img: patF,
+        img: com,
     },
 ];
 
@@ -32,7 +41,7 @@ const conseil = [
         name: "Patrick SEUMEN TONOU",
         titre: "Dr",
         pro: "Docteur en Mathématiques Appliquées à la Finance",
-        img: pat,
+        img: dg,
     },
     {
         id: 2,
@@ -40,7 +49,7 @@ const conseil = [
         name: "Etienne TSAMO",
         titre: "Pr",
         pro: "Professeur agrégé d'université en Chimie",
-        img: pat,
+        img: dac,
     },
     {
         id: 3,
@@ -48,7 +57,7 @@ const conseil = [
         name: "Gabriel NGUETSENG",
         titre: "Pr",
         pro: "Professeur agrégé d'université en Mathématiques",
-        img: pat,
+        img: nguetseng,
     },
 
     {
@@ -57,15 +66,15 @@ const conseil = [
         name: "Norbert NOUTCHEGUEME",
         titre: "Pr",
         pro: "Professeur agrégé d'université en Mathématiques",
-        img: pat,
+        img: noutch,
     },
     {
         id: 5,
         poste: "Membre",
         name: "Siméon FOTSO",
         titre: "Pr",
-        pro: "Professeur agrégé d'université en Mathématiques, Statisticien, HDR en Mathématiques Appliquées",
-        img: pat,
+        pro: "Professeur agrégé d'université en Mathématiques, Statisticien",
+        img: fotso,
     },
     {
         id: 6,
@@ -73,7 +82,7 @@ const conseil = [
         name: "KOUAMO Olaf",
         titre: "Dr",
         pro: "Chief Data Scientist, VOYAGES-SNCF France",
-        img: pat,
+        img: kouamo,
     },
     {
         id: 7,
@@ -81,7 +90,7 @@ const conseil = [
         name: "Josué DJOBLONA SEKNEWNA",
         titre: "M",
         pro: "Actuaire, BEAC/CRBC Cameroun",
-        img: pat,
+        img: sek,
     },
     {
         id: 8,
@@ -89,7 +98,7 @@ const conseil = [
         name: "Blaise KENDAH",
         titre: "M",
         pro: "Actuaire",
-        img: pat,
+        img: kendah,
     },
 ];
 const Gouvernance = () => {
@@ -104,21 +113,21 @@ const Gouvernance = () => {
                         <h1 className="sm:text-2xl md:text-4xl xl:text-4xl lg:text-4xl text-center text-sky-500">
                             L'équipe dirigeante
                         </h1>
-                        <div className="py-4 px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-20 lg:gap-x-18 xl:gap-x-18 place-items-center">
+                        <div className="py-4 px-2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-20 lg:gap-x-18 xl:gap-x-18 place-items-center">
                             {equipe.map((data) => (
-                                <div className="flex-cols md:flex text-center lg:flex xl:flex justify-evenly gap-2 md:gap-2 lg:gap-2 xl:gap-2 w-250">
-                                    <div className="rounded-full text-center">
+                                <div className="flex sm:flex-col md:flex-col lg:flex-col xl:flex-col md:gap-2 lg:gap-2 xl:gap-2 w-400">
+                                    <div className="rounded-full">
                                         <img
                                             src={data.img}
                                             alt=""
                                             className="rounded-full"
                                         />
                                     </div>
-                                    <div className="w-[500px] p-4">
+                                    <div className="">
                                         <h3>
                                             {data.titre}. {data.name}
                                         </h3>
-                                        <p className="text-red-500">
+                                        <p className="text-red-500 text-sm">
                                             {data.poste}
                                         </p>
                                     </div>
@@ -133,10 +142,10 @@ const Gouvernance = () => {
                         <h1 className="sm:text-2xl md:text-4xl xl:text-4xl lg:text-4xl text-center text-sky-500">
                             Le conseil scientifique
                         </h1>
-                        <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-24 lg:gap-x-24 xl:gap-x-24 place-items-center">
+                        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-22 lg:gap-2 xl:gap-24 place-items-center">
                             {conseil.map((data) => (
-                                <div className="flex-cols md:flex lg:flex xl:flex text-center justify-evenly gap-2 p-6 w-[400px]">
-                                    <div className="rounded-full">
+                                <div className="flex-col md:flex-col lg:flex-col xl:flex-col text-center justify-evenly gap-2 p-2 w-[400px]">
+                                    <div className="rounded-full pl-16">
                                         <img
                                             src={data.img}
                                             alt=""

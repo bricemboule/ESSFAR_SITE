@@ -128,7 +128,7 @@ const HomePartenaire = () => {
                 >
                     <div className="container">
                         <div className="text-center mb-2 max-w-[400px] mx-auto">
-                            <h1 className="text-6xl font-bold font-tangeri">
+                            <h1 className="text-4xl md:text-6xl xl:text-6xl lg:text-6xl font-tangeri">
                                 Nos partenaires académiques
                             </h1>
                         </div>
@@ -174,7 +174,7 @@ const HomePartenaire = () => {
                 >
                     <div className="container">
                         <div className="text-center mb-2 max-w-[400px] mx-auto">
-                            <h1 className="text-6xl font-bold font-tangeri">
+                            <h1 className="text-4xl md:text-6xl xl:text-6xl lg:text-6xl font-tangeri">
                                 Nos partenaires professionnels
                             </h1>
                         </div>

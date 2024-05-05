@@ -7,14 +7,14 @@ const MotDirecteur = () => {
         <>
             <div className="relative z-[-1]">
                 <div className="mt-10">
-                    <h1 className="text-2xl md:text-6xl text-sky-600 text-center">
+                    <h1 className="text-2xl md:text-4xl text-sky-600 text-center">
                         BIENVENUE A L'ESSFAR
                     </h1>
                 </div>
             </div>
             <section
                 id="home"
-                className="w-full pt-5 pb-10 flex-cols  md:flex gap-5 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-gray-700"
+                className="pt-5 pb-10 flex sm:flex-col  md:flex-col gap-5 xl:gap-0 lg:flex-row xl:flex-row items-center border-b-[1px] font-titleFont border-b-gray-700"
             >
                 <Droit />
                 <Left />

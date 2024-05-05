@@ -106,12 +106,12 @@ const FormationIntiale = () => {
                                         <div className="flex items-center gap-4 text-center ml-40">
                                             <p className="text-red-500 italic">
                                                 <Link to={data.lien}>
-                                                    Plus d'infos
+                                                    Plus d'infos...
                                                 </Link>
                                             </p>
-                                            <p className="text-red-500 italic">
+                                            {/*<p className="text-red-500 italic">
                                                 <Link>S'inscrire</Link>
-                                            </p>
+                            </p>*/}
                                         </div>
                                     </div>
                                 </div>

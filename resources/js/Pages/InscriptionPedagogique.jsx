@@ -65,7 +65,7 @@ const InscriptionPedagogique = () => {
 
             {donnee.map((data) => (
                 <div className="p-8">
-                    <h1 className="text-3xl text-center text-blue-500 underline">
+                    <h1 className="text-3xl text-center text-sky-500 underline">
                         {data.titre}
                     </h1>
                     <div className="px-2 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-20 place-items-center">
@@ -95,7 +95,7 @@ const InscriptionPedagogique = () => {
 
             {procedure.map((data) => (
                 <div className="p-8">
-                    <h1 className="text-3xl text-center text-blue-500 underline">
+                    <h1 className="text-3xl text-center text-sky-500 underline">
                         {data.titre}
                     </h1>
                     <p className="text-xl p-6">{data.desc}</p>

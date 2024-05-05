@@ -58,14 +58,14 @@ const Carousel1 = () => {
 
     return (
         <div className="z-[-1] relative shadow-lg overflow-hidden">
-            <div className=" h-[300px] md:h-[470px]">
+            <div className=" h-[300px] md:h-[350px] lg:h-[500px] xl:h-[500px]">
                 {SliderContent.map((data, i) => {
                     return (
                         <img
                             src={data.img}
                             key={i}
                             alt="slideImg"
-                            className={`h-[250px] md:h-[500px] w-[100%] xl:w-full absolute object-cover inset-0 duration-[2.5s] ease-out transition-[clip-path] ${
+                            className={`h-[250px] md:h-[300px] lg:h-[470px] xl:h-[470px] w-[100%] xl:w-full absolute object-cover inset-0 duration-[2.5s] ease-out transition-[clip-path] ${
                                 i === active ? "clip-visible" : "clip-hidden"
                             }`}
                         />

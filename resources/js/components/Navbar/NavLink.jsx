@@ -12,7 +12,7 @@ const NavLink = () => {
                 <div>
                     <div className="px-3 text-left md:cursor-pointer group">
                         <h1
-                            className="py-7 hover:text-blue-500 flex justify-between items-center md:pr-0 pr-5"
+                            className="py-7 hover:text-sky-500 flex justify-between items-center lg:pr-10 pr-5"
                             onClick={() =>
                                 heading !== l.nom
                                     ? setHeading(l.nom)
@@ -31,7 +31,7 @@ const NavLink = () => {
                         </h1>
 
                         {l.submenu && (
-                            <div className="absolute top-30 hidden group-hover:md:block hover:md:block hover:z-1">
+                            <div className="absolute top-30 hidden group-hover:lg:block hover:lg:block hover:z-1">
                                 <div className="bg-white px-3.5 ">
                                     {l.liens.map((sublin) => (
                                         <div className="">
@@ -40,8 +40,8 @@ const NavLink = () => {
                                                     to={line.link}
                                                     className="text-base"
                                                 >
-                                                    <div className="hover:bg-blue-500 hover:text-white h-10">
-                                                        <li className="text-sm py-3 px-2 hover:text-white">
+                                                    <div className="hover:bg-sky-500 hover:text-white h-10">
+                                                        <li className="text-sm py-3 px-6 hover:text-white">
                                                             {line.nom}
                                                         </li>
                                                     </div>

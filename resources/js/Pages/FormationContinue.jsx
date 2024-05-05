@@ -61,7 +61,7 @@ const FormationContinue = () => {
                             />
                         </div>
                         <div>
-                            <h2 className="text-xl text-blue-500 capitalize">
+                            <h2 className="text-xl text-sky-500 capitalize">
                                 {data.titre}
                             </h2>
                             <p className="text-xl text-gray-500 text-justify">

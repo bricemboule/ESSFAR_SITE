@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="bg-white py-1 z-1">
             <Header />
             <div className="flex items-center font-medium justify-around">
-                <div className="z-50 p-3 md:w-auto w-full flex justify-between">
+                <div className="z-50 p-3  w-full flex justify-between">
                     <div className="flex flex-col">
                         <img
                             src={Logo}
@@ -27,14 +27,14 @@ const Navbar = () => {
                     </div>
 
                     <div
-                        className="text-3xl md:hidden"
+                        className="text-3xl lg:hidden xl:hidden "
                         onClick={() => setOpen(!open)}
                     >
                         <h2>{!open ? <IoMenu /> : <IoCloseSharp />}</h2>
                     </div>
                 </div>
 
-                <ul className=" md:flex hidden items-center font-[Times New Roman] gap-10">
+                <ul className=" lg:flex hidden items-center font-[Times New Roman] gap-10">
                     <li>
                         <Link
                             to="/"
@@ -54,7 +54,7 @@ const Navbar = () => {
                 {/* Menu a la vue d'un telephone */}
 
                 <ul
-                    className={`md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4  duration-500 ${
+                    className={` bg-white absolute w-full h-full bottom-0 py-24 pl-4  duration-500 ${
                         open ? "left-0" : "left-[-100%] z-1"
                     }`}
                 >

@@ -10,11 +10,15 @@ const Header = () => {
             <div className="flex md:flex-row items-center gap-1 ">
                 <GiRotaryPhone
                     size={25}
-                    className="md:text-md sm:text-sm md:block"
+                    className="md:text-md sm:text-sm md:block phone:hidden sm:block lg:block xl:block"
                 />
-                <p className="max-sm:py-2 flex max-sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
-                    <span className="max-sm:text-sm">697-03-83-27 /</span>
-                    <span className="max-sm:text-sm">699-83-53-96</span>
+                <p className="max-sm:py-2 flex max-sm:flex-col phone:flex-col md:flex-row lg:flex-row xl:flex-row">
+                    <span className="max-sm:text-sm phone:text-xs md:text-sm lg:text-sm xl:text-sm">
+                        697-03-83-27/
+                    </span>
+                    <span className="max-sm:text-sm phone:text-xs md:text-sm lg:text-sm xl:text-sm">
+                        699-83-53-96
+                    </span>
                 </p>
             </div>
             <div className="flex flex-row items-center gap-1">

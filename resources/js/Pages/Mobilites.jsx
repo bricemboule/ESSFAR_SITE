@@ -15,7 +15,7 @@ const Mobilites = () => {
                 <h1 className="text-center text-sky-500 text-3xl">
                     Les formations en mobilité
                 </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-x-24 place-items-center">
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 md:gap-x-24 place-items-center">
                     <div className="p-4">
                         <h1 className="text-xl text-red-500 underline">
                             <Link
@@ -150,8 +150,10 @@ const Mobilites = () => {
                         </h1>
                         <div className="px-8">
                             <ul className="list-disc text-xl">
-                                <li>Licence en Actuariat</li>
-                                <li>Master en Actuariat</li>
+                                <li>
+                                    Master BIHAR (Big Data Intelligence For
+                                    Human Augmented Reality)
+                                </li>
                             </ul>
                         </div>
                     </div>

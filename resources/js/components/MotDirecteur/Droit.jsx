@@ -4,9 +4,9 @@ import { FadeIn } from "./FadeIn";
 
 const Droit = () => {
     return (
-        <FadeIn className="w-full flex-cols justify-center items-center relative ml-3">
+        <FadeIn className="lg:w-full flex-cols justify-center items-center relative ml-3">
             <img
-                className="w-full h-[250px]  md:h-[500px] lgl:w-[600px] lgl:h-[680px] rounded-lg"
+                className="w-full h-[250px]  md:h-[350px] lg:w-[700px] lg:h-[680px] xl:w-[700px] xl:h-[680px] rounded-lg"
                 src={bannerImg}
                 alt="Photo Directeur Général"
             />

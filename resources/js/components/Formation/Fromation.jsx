@@ -39,12 +39,10 @@ const FormationsData = [
 const Fromation = () => {
     return (
         <div>
-            <div className="text-center mb-20 max-w-[800px] mx-auto pt-8">
-                <h1 className="text-5xl text-red-500 md:text-6xl font-tangeri ">
-                    Des spécialités à la hauteur des défis du 21è Siècle
-                </h1>
-            </div>
-            <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 md:gap-4 lg:gap-4 xl:gap-2 place-items-center">
+            <h1 className="text-center mb-10 mt-4 text-4xl text-red-500 md:text-5xl lg:text-6xl xl:text-6xl font-tangeri ">
+                Des spécialités à la hauteur des défis du 21è Siècle
+            </h1>
+            <div className="pt-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4  md:gap-x-6 md:gap-y-20 sm:gap-16 lg:gap-4 xl:gap-2 place-items-center">
                 {FormationsData.map((formation) => (
                     <Link to={formation.lien}>
                         <div className="rounded-2xl bg-white hover:bg-blue-400 hover:text-white relative shadow-xl duration-high group w-[250px]">
